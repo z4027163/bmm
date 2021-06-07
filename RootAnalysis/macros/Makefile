@@ -38,11 +38,9 @@ EXTHEADERS    = -I..
 
 # -- Files
 CSTUFF = preselection.o setupReader.o
-READER = treeReader01.o bmmReader.o genAnalysis.o \
-         candAna.o candAnaMuMu.o candAnaBu2JpsiK.o candAnaBs2JpsiPhi.o candAnaBs2Jpsif0.o candAnaDstar.o candAnaHh.o candAnaBd2DstarPi.o \
-         candAnaBd2JpsiKstar.o candAnaRecoil.o candAnaFake.o \
-         plotClass.o plotResults.o plotWork.o plotReducedOverlays.o plotRecoil.o plotFake.o plotStuff.o plotBDT.o plotTrigger.o\
-         umlLifetime.o anaNumbers.o  tmva1.o
+READER = treeReader01.o genAnalysis.o \
+	 plotClassnew.o plotResultsnew.o \
+         anaNumbers.o  plotFake.o
 
 DICT = ${READER:.o=Dict.o}
 DICTHEADERS = ${READER:.o=Dict.h}
@@ -83,8 +81,7 @@ all: vars prep lib bin
 lib: $(addprefix obj/,$(CSTUFF) $(READER)  $(DICT))
 	$(CXX) $(SOFLAGS) $(addprefix obj/,$(CSTUFF) $(READER) $(DICT)) -o lib/libAnaClasses.so $(GLIBS) -lMinuit lib/libAna00.so lib/libUtil.so
 
-bin: lib obj/runBmm.o obj/runPlot.o
-	$(LD) $(LDFLAGS) -o bin/runBmm $(GLIBS) obj/runBmm.o lib/libAnaClasses.so lib/libAna00.so lib/libUtil.so
+bin: lib obj/runPlot.o
 	$(LD) $(LDFLAGS) -o bin/runPlot $(GLIBS) obj/runPlot.o lib/libAnaClasses.so lib/libAna00.so lib/libUtil.so
 
 # -- preparatory setup
@@ -97,7 +94,7 @@ prep:
 
 # -- clean up
 clean:
-	rm -f $(addprefix obj/,$(READER) $(DICT) $(CSTUFF) runBmm.o runPlot.o)
+	rm -f $(addprefix obj/,$(READER) $(DICT) $(CSTUFF) runPlot.o)
 	rm -f $(DICTHEADERS)  $(DICTSOURCES)
 	rm -f bin/*
 	rm -f lib/*

@@ -44,12 +44,16 @@ namespace {
 
   // ----------------------------------------------------------------------
   double iF_expo_HS(double *x, double *par) {
-    if (x[0] > par[2]) {
-      return par[0]*TMath::Exp((x[0]-par[2])*par[1]);
-    } else {
-      return 0.;
-    }
-  }
+    return par[0]*TMath::Exp((x[0])*par[1]);
+  }// added to removelower cutof
+
+  // double iF_expo_HS(double *x, double *par) {
+  //   if (x[0] > par[2]) {
+  //     return par[0]*TMath::Exp((x[0]-par[2])*par[1]);
+  //   } else {
+  //     return 0.;
+  //   }
+  // }
 
   // ----------------------------------------------------------------------
   double iF_err(double *x, double *par) {
@@ -2931,9 +2935,9 @@ TF1* initFunc::bupsik(TH1 *h, double sigma) {
 
   f->SetParameter(0, h->GetMaximum());
   f->SetParameter(1, 5.28);
-  f->SetParameter(2, sigma); limitPar(2, 0.5*sigma, 1.99*sigma);
-  f->SetParameter(3, 0.20); limitPar(3, 0.010, 0.60);
-  f->SetParameter(4, 2.2*sigma); limitPar(4, 2.01*sigma, 5.*sigma);
+  f->SetParameter(2, sigma); limitPar(2, 0.6*sigma, 1.99*sigma);
+  f->SetParameter(3, 0.20); limitPar(3, 0.010, 0.90);
+  f->SetParameter(4, 2.5*sigma); limitPar(4, 2.01*sigma, 5.5*sigma);
 
   double a(-1.), b(-1.);
   double eps(0.00001);
@@ -2943,8 +2947,9 @@ TF1* initFunc::bupsik(TH1 *h, double sigma) {
   f->SetParameter(6, b);
 
   //  fixPar(7, 5.142);
-  f->SetParameter(7, 5.142); limitPar(7, 5.137, 5.147);
-  f->SetParameter(8, 0.04);  limitPar(8, 0.020, 0.080);
+  //  f->SetParameter(7, 5.142); limitPar(7, 5.137, 5.147);
+  f->SetParameter(7, 5.142); fixPar(7, 5.142);
+  f->SetParameter(8, 0.03);  limitPar(8, 0.010, 0.060);
   f->SetParameter(9, 0.4*h->Integral(1, 5)/5);
   applyLimits(f, "bupsik");
   return f;
@@ -3000,7 +3005,8 @@ TF1* initFunc::bupsik1(TH1 *h, double sigma) {
 TF1* initFunc::bspsiphi(TH1 *h, double lo, double hi, double sigma) {
   TVirtualFitter::SetMaxIterations(10000);
   TVirtualFitter::SetPrecision(1.e-4);
-  int npar(9);
+  //int npar(9);
+  int npar(8);
   TF1 *f = (TF1*)gROOT->FindObject(Form("%s_bspsiphi", fName.c_str()));
   if (f) delete f;
   f = new TF1(Form("%s_bspsiphi", fName.c_str()), iF_bspsiphi, h->GetBinLowEdge(1), h->GetBinLowEdge(h->GetNbinsX()+1), npar);
@@ -3008,16 +3014,16 @@ TF1* initFunc::bspsiphi(TH1 *h, double lo, double hi, double sigma) {
 
   f->SetParName(6, "exp0");
   f->SetParName(7, "exp1");
-  f->SetParName(8, "cutoff");
+  //f->SetParName(8, "cutoff");
 
   f->SetLineWidth(2);
 
   f->SetParameter(0, h->GetMaximum());
   f->SetParameter(1, 5.37);
-  f->SetParameter(2, sigma); limitPar(2, 0.5*sigma, 1.4*sigma);
-  f->SetParameter(3, 0.20); limitPar(3, 0.010, 0.600);
-  f->SetParameter(4, 2.*sigma); limitPar(4, 1.5*sigma, 4.*sigma);
-  f->SetParameter(5, 0.005*f->GetParameter(0)); limitPar(5, 0.001*f->GetParameter(0), 0.02*f->GetParameter(0));
+  f->SetParameter(2, sigma); limitPar(2, 0.1*sigma, 1.4*sigma);
+  f->SetParameter(3, 0.30); limitPar(3, 0.010, 0.900);
+  f->SetParameter(4, 2.*sigma); limitPar(4, 0.03*sigma, 4.*sigma);
+  f->SetParameter(5, 0.005*f->GetParameter(0)); limitPar(5, 0.01*f->GetParameter(0), 0.02*f->GetParameter(0));
 
   double a(-1.), b(-1.), c(-1.);
   fLo = lo; fHi = hi;
@@ -3026,7 +3032,7 @@ TF1* initFunc::bspsiphi(TH1 *h, double lo, double hi, double sigma) {
   f->SetParameter(7, b);
   // limitPar(6, 0.0, 1.e5);
   // limitPar(7, -10., 10.);
-  fixPar(8, lo);
+  //fixPar(8, lo);
   applyLimits(f, "bspsiphi");
   return f;
 }

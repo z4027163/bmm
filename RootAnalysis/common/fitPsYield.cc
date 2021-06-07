@@ -37,7 +37,7 @@
 using namespace std;
 
 // ----------------------------------------------------------------------
-fitPsYield::fitPsYield(string hname, TDirectory *pD, int verbose): fVerbose(verbose), fBaseName(hname), fpIF(new initFunc),
+fitPsYield::fitPsYield(string hname, string hname1, TDirectory *pD, int verbose): fVerbose(verbose), fBaseName(hname), fpIF(new initFunc),
 								   fCombined(0), fCombinedW8(0) {
   fData.clear();
   TDirectory *pDir = pD;
@@ -52,7 +52,7 @@ fitPsYield::fitPsYield(string hname, TDirectory *pD, int verbose): fVerbose(verb
       TH2D *h2     = (TH2D*)pDir->Get(hname.c_str());
       cout << "found hname ->" << hname << "<- and h2 = " << h2 << endl;
       if (h2) {
-	initFromHist(h2);
+	initFromHist(h2, hname1);
 	break;
       }
     }
@@ -82,7 +82,7 @@ fitPsYield::~fitPsYield() {
 }
 
 // ----------------------------------------------------------------------
-void fitPsYield::initFromHist(TH2D *h2) {
+void fitPsYield::initFromHist(TH2D *h2, string hname1) {
 
   if (!h2) {
     cout << "histogram does not exist, returning!" << endl;
@@ -99,6 +99,7 @@ void fitPsYield::initFromHist(TH2D *h2) {
   int chan2    = h2->GetYaxis()->FindBin(h2->GetYaxis()->GetXmax()) - 1;
   fCombined    = h2->ProjectionX(Form("fpy_%s_comb", hname.c_str()), 2, 2);
   fCombinedW8  = h2->ProjectionX(Form("fpy_%s_combW8", hname.c_str()), 1, 1);
+  //fCombinedW81D  = h2->ProjectionX(Form("fpy_%s_combW8", hname.c_str()), 1, 1);
   // -- fW8Combined
   double ent   = fH2->Integral(1, fH2->GetNbinsX(), 1, 1);
   if (ent < 1) {
@@ -106,6 +107,7 @@ void fitPsYield::initFromHist(TH2D *h2) {
     delete fH2;
     delete fCombined;
     delete fCombinedW8;
+    //delete fCombinedW81D;
     return;
   }
   fW8Combined             = new psd();
@@ -113,12 +115,23 @@ void fitPsYield::initFromHist(TH2D *h2) {
   fW8Combined->fEntries   = ent;
   fW8Combined->fH1        = h2->ProjectionX(Form("fpy_%s_w8", hname.c_str()), 1, 1);
   fW8Combined->fH1->SetTitle(Form("fpy_%s_w8", hname.c_str()));
+  TDirectory *pDir = gDirectory;
+  TH1D* h3     = (TH1D*)pDir->Get(hname1.c_str());
+
+  fW8Combined1D             = new psd();
+  fW8Combined1D->fPs        = -1;
+  fW8Combined1D->fEntries   = ent;
+  fW8Combined1D->fH1        = h3;
+  fW8Combined1D->fH1->SetTitle(Form("fpy_%s_1D_w8", hname.c_str()));
+  
+  
   // -- fUnW8Combined
   ent   = fH2->Integral(1, fH2->GetNbinsX(), 2, 2);
   if (ent < 1) {
     cout << "no entries in U8Combined found, deleting and returning" << endl;
     delete fH2;
     delete fW8Combined;
+    delete fW8Combined1D;
     delete fCombined;
     delete fCombinedW8;
     return;
@@ -128,12 +141,15 @@ void fitPsYield::initFromHist(TH2D *h2) {
   fUnW8Combined->fEntries = ent;
   fUnW8Combined->fH1      = h2->ProjectionX(Form("fpy_%s_u8", hname.c_str()), 2, 2);
   fUnW8Combined->fH1->SetTitle(Form("fpy_%s_u8", hname.c_str()));
+ 
   // -- per prescale value
+  std::cout<<"prescale value in fitPsYield"<<std::endl;
   for (int ips = chan1; ips <= chan2; ++ips) {
     double ent   = fH2->Integral(1, fH2->GetNbinsX(), ips, ips);
     if (ent < 1) continue;
     psd *a       = new psd();
     a->fPs       = ips - chanB;
+    std::cout<<" prescale in ips "<<ips<<" chanB "<<chanB<<" ent "<<ent<<std::endl;
     a->fEntries  = ent;
     a->fH1       = h2->ProjectionX(Form("fpy_%s_ps%d", hname.c_str(), a->fPs), ips, ips);
     a->fH1->SetTitle(Form("fpy_%s_ps%d", hname.c_str(), a->fPs));
@@ -195,32 +211,43 @@ void fitPsYield::fitBu2JpsiKp(int limitpars, string pdfprefix, int whichfit, dou
     return;
   }
   // -- prefit weighted combination:
-  (this->*pF)(fW8Combined, -1, pdfprefix, lo, hi, sigma, false);
+  //(this->*pF)(fW8Combined, -1, pdfprefix, lo, hi, sigma, false);
   // -- prefit unweighted combination:
-  (this->*pF)(fUnW8Combined, -1, pdfprefix, lo, hi, sigma, false);
-
+  //(this->*pF)(fUnW8Combined, -1, pdfprefix, lo, hi, sigma, false);
+  //(this->*pF)(fW8Combined1D, 0, pdfprefix, lo, hi, sigma, false);
+  (this->*pF)(fW8Combined1D, -1, pdfprefix, lo, hi, sigma, false);
+  (this->*pF)(fW8Combined1D, limitpars, pdfprefix, lo, hi, sigma, false);
   // -- fit all prescales
-  for (unsigned int ips = 0; ips < fData.size(); ++ips) {
-    (this->*pF)(fData[ips], limitpars, pdfprefix, lo, hi, sigma, false);
-  }
+  // for (unsigned int ips = 0; ips < fData.size(); ++ips) {
+  //   (this->*pF)(fData[ips], limitpars, pdfprefix, lo, hi, sigma, false);
+  // }
 
-  fSummary.clear();
-  for (unsigned int i = 0; i < fData.size(); ++i) {
-    // cout << " -> adding ps = " << fData[i]->fPs
-    // 	 << " signal = " << fData[i]->fResults.fSg
-    // 	 << " +/- " << fData[i]->fResults.fSgE;
-    fSummary.fSg += fData[i]->fPs*fData[i]->fResults.fSg;
-    fSummary.fSgE += fData[i]->fPs*fData[i]->fPs*fData[i]->fResults.fSgE*fData[i]->fResults.fSgE;
-    // cout << " -> " << fSummary.fSg << " +/- " << TMath::Sqrt(fSummary.fSgE)
-    //   	 << endl;
+  // fSummary.clear();
+  // for (unsigned int i = 0; i < fData.size(); ++i) {
+  //   cout << " -> adding ps = " << fData[i]->fPs
+  //   	 << " signal = " << fData[i]->fResults.fSg
+  //   	 << " +/- " << fData[i]->fResults.fSgE;
+  //   fSummary.fSg += fData[i]->fPs*fData[i]->fResults.fSg;
+  //   fSummary.fSgE += fData[i]->fPs*fData[i]->fPs*fData[i]->fResults.fSgE*fData[i]->fResults.fSgE;
+  //   cout << " -> " << fSummary.fSg << " +/- " << TMath::Sqrt(fSummary.fSgE)
+  //     	 << endl;
 
-  }
-  fSummary.fSgE = TMath::Sqrt(fSummary.fSgE);
+  // }
+  // fSummary.fSgE = TMath::Sqrt(fSummary.fSgE);
   // cout << " => total: " << fSummary.fSg << " +/- " << fSummary.fSgE << endl;
-  fSummary.fBg      = fUnW8Combined->fResults.fBg;
-  fSummary.fBgE     = fUnW8Combined->fResults.fBgE;
-  fSummary.fSgSigma = fUnW8Combined->fResults.fSgSigma;
-  fSummary.fSgPeak  = fUnW8Combined->fResults.fSgPeak;
+  // fSummary.fSg      = fUnW8Combined->fResults.fSg;
+  // fSummary.fSgE      = fUnW8Combined->fResults.fSgE;
+  // fSummary.fBg      = fUnW8Combined->fResults.fBg;
+  // fSummary.fBgE     = fUnW8Combined->fResults.fBgE;
+  // fSummary.fSgSigma = fUnW8Combined->fResults.fSgSigma;
+  //fSummary.fSgPeak  = fUnW8Combined->fResults.fSgPeak;
+  fSummary.fSg      = fW8Combined1D->fResults.fSg;
+  fSummary.fSgE     = fW8Combined1D->fResults.fSgE;
+  fSummary.fBg      = fW8Combined1D->fResults.fBg;
+  fSummary.fBgE     = fW8Combined1D->fResults.fBgE;
+  fSummary.fSgSigma = fW8Combined1D->fResults.fSgSigma;
+  fSummary.fSgPeak  = fW8Combined1D->fResults.fSgPeak;
+
   printSummary();
 }
 
@@ -319,8 +346,8 @@ void fitPsYield::fit0_Bu2JpsiKp(psd *res, int limitpars, string pdfprefix, doubl
     fCombMax = h->GetMaximum();
     f1->SetParLimits(0, 0., 10.*h->GetMaximum());
     f1->SetParLimits(1, 5.25,  5.30); // it's a B+ fit!
-    f1->SetParLimits(2, 0.010,  0.04);
-    f1->SetParLimits(4, 0.041,  0.10);
+    f1->SetParLimits(2, 0.005,  0.025);
+    f1->SetParLimits(4, 0.01,  0.08);
     //    f1->SetParLimits(5, 0.,  1.e15);
     f1->SetParLimits(9, 0.,  10.*h->GetMaximum());
   } else {
@@ -431,8 +458,11 @@ void fitPsYield::fit0_Bu2JpsiKp(psd *res, int limitpars, string pdfprefix, doubl
     if (h->GetSumOfWeights() > h->GetEntries()) {
       fitopt += "w";
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting with Weightedbinned likelihood fit"<<"\t entry "<<h->GetEntries()<<" weighted entry "<<h->GetSumOfWeights()<<endl;
+      cout<<"integral "<<h->Integral()<<endl;
     } else {
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting with binned likelihood fit"<<endl;
     }
 
     // -- fix expo to found solution if error too large and refit:
@@ -477,11 +507,14 @@ void fitPsYield::fit0_Bu2JpsiKp(psd *res, int limitpars, string pdfprefix, doubl
       f1->FixParameter(8, f1->GetParameter(8));
       if (fVerbose > -1) fpIF->dumpParameters(f1);
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
       c0->SaveAs(Form("%s_notabene2fit0_%s.pdf", pdfprefix.c_str(), h->GetName()));
       f1->FixParameter(5, f1->GetParameter(5));
       f1->FixParameter(6, f1->GetParameter(6));
       if (fVerbose > -1) fpIF->dumpParameters(f1);
+      
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
       if ((TMath::IsNaN(f1->GetParError(0)))
 	  || ((f1->GetParError(0)/f1->GetParameter(0) > 0.04) && (f1->GetParError(0)/f1->GetParameter(0) > TOL*esg/nsg))
 	  || (f1->GetChisquare() > 170.)
@@ -872,8 +905,10 @@ void fitPsYield::fit1_Bu2JpsiKp(psd *res, int limitpars, string pdfprefix, doubl
     if (h->GetSumOfWeights() > h->GetEntries()) {
       fitopt += "w";
       h->Fit(f1, fitopt.c_str(), "", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     } else {
       h->Fit(f1, fitopt.c_str(), "", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     }
   } else {
     h->Draw();
@@ -1055,25 +1090,35 @@ void fitPsYield::fitBs2JpsiPhi(int limitpars, string pdfprefix, int whichfit, do
   if (1 == whichfit) pF = &fitPsYield::fit1_Bs2JpsiPhi;
 
   // -- prefit weighted combination:
-  (this->*pF)(fW8Combined, -1, pdfprefix, lo, hi, sigma, false);
+  //(this->*pF)(fW8Combined, -1, pdfprefix, lo, hi, sigma, false);
   // -- prefit unweighted combination:
-  (this->*pF)(fUnW8Combined, -1, pdfprefix, lo, hi, sigma, false);
+  //(this->*pF)(fUnW8Combined, -1, pdfprefix, lo, hi, sigma, false);
+  (this->*pF)(fW8Combined1D, -1, pdfprefix, lo, hi, sigma, false);
+  (this->*pF)(fW8Combined1D, limitpars, pdfprefix, lo, hi, sigma, false);
 
-  // -- fit all prescales
-  for (unsigned int ips = 0; ips < fData.size(); ++ips) {
-    (this->*pF)(fData[ips], limitpars, pdfprefix, lo, hi, sigma, false);
-  }
+  // // -- fit all prescales
+  // for (unsigned int ips = 0; ips < fData.size(); ++ips) {
+  //   (this->*pF)(fData[ips], limitpars, pdfprefix, lo, hi, sigma, false);
+  // }
 
-  fSummary.clear();
-  for (unsigned int i = 0; i < fData.size(); ++i) {
-    fSummary.fSg  += fData[i]->fPs*fData[i]->fResults.fSg;
-    fSummary.fSgE += fData[i]->fPs*fData[i]->fPs*fData[i]->fResults.fSgE*fData[i]->fResults.fSgE;
-  }
-  fSummary.fSgE = TMath::Sqrt(fSummary.fSgE);
-  fSummary.fBg      = fUnW8Combined->fResults.fBg;
-  fSummary.fBgE     = fUnW8Combined->fResults.fBgE;
-  fSummary.fSgSigma = fUnW8Combined->fResults.fSgSigma;
-  fSummary.fSgPeak  = fUnW8Combined->fResults.fSgPeak;
+  // fSummary.clear();
+  // for (unsigned int i = 0; i < fData.size(); ++i) {
+  //   fSummary.fSg  += fData[i]->fPs*fData[i]->fResults.fSg;
+  //   fSummary.fSgE += fData[i]->fPs*fData[i]->fPs*fData[i]->fResults.fSgE*fData[i]->fResults.fSgE;
+  // }
+  // fSummary.fSgE = TMath::Sqrt(fSummary.fSgE);
+  fSummary.fSg      = fW8Combined1D->fResults.fSg;
+  fSummary.fSgE     = fW8Combined1D->fResults.fSgE;
+  fSummary.fBg      = fW8Combined1D->fResults.fBg;
+  fSummary.fBgE     = fW8Combined1D->fResults.fBgE;
+  fSummary.fSgSigma = fW8Combined1D->fResults.fSgSigma;
+  fSummary.fSgPeak  = fW8Combined1D->fResults.fSgPeak;
+  // fSummary.fSg      = fUnW8Combined->fResults.fSg;
+  // fSummary.fSgE     = fUnW8Combined->fResults.fSgE;
+  // fSummary.fBg      = fUnW8Combined->fResults.fBg;
+  // fSummary.fBgE     = fUnW8Combined->fResults.fBgE;
+  // fSummary.fSgSigma = fUnW8Combined->fResults.fSgSigma;
+  // fSummary.fSgPeak  = fUnW8Combined->fResults.fSgPeak;
 }
 
 // ----------------------------------------------------------------------
@@ -1151,9 +1196,9 @@ void fitPsYield::fit0_Bs2JpsiPhi(psd *res, int limitpars, string pdfprefix, doub
     fCombMax = h->GetMaximum();
     f1->SetParLimits(0, 0.,  10.*h->GetMaximum());
     f1->SetParLimits(1, 5.35, 5.37); // this is a Bs fit, after all
-    f1->SetParLimits(2, 0.2*sigma, 1.1*sigma);
-    f1->SetParLimits(3, 0.01, 0.5);
-    f1->SetParLimits(4, sigma*1.1*1.01, sigma*1.1*1.5);
+    f1->SetParLimits(2, 0.2*sigma, 2.61*sigma);
+    f1->SetParLimits(3, 0.01, 0.9);
+    f1->SetParLimits(4, sigma*1.1*1.01, sigma*2.1*1.5);
     f1->SetParLimits(5, 0., 1.e9);
   } else {
     for (int ipar = 0; ipar < f1->GetNpar(); ++ipar) {
@@ -1422,14 +1467,14 @@ void fitPsYield::fit1_Bs2JpsiPhi(psd *res, int limitpars, string pdfprefix, doub
   fpIF->fHi = hi;
 
   cout << "==> fitPsYield::fit1_Bs2JpsiPhi> FITTING " << h->GetName() << " with limitpars = " << limitpars << endl;
-  double xmin(lo), xmax(hi), expoLo(5.0), expoHi(6.0);
+  double xmin(lo), xmax(hi), expoLo(5.2), expoHi(6.0);
   if (fVerbose > -1) {
-    expoLo = 5.15;
+    expoLo = 5.2;
   }
   if (fVerbose) cout << "h->GetSumOfWeights() = " << h->GetSumOfWeights() << " h->GetEntries() = " << h->GetEntries() << endl;
   //  if (fVerbose) fpIF->dumpParameters(f1);
   h->SetMinimum(0.);
-  h->SetAxisRange(5.0, fpIF->fHi);
+  h->SetAxisRange(5.2, fpIF->fHi);
   //  h->SetAxisRange(5.0, 5.9);
   if (limitpars < 0) {
     fCombMax = h->GetMaximum();
@@ -1478,8 +1523,10 @@ void fitPsYield::fit1_Bs2JpsiPhi(psd *res, int limitpars, string pdfprefix, doub
     if (h->GetSumOfWeights() > h->GetEntries()) {
       fitopt += "w";
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     } else {
       h->Fit(f1, fitopt.c_str(), "e", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     }
   } else {
     h->Draw();
@@ -1833,8 +1880,10 @@ void fitPsYield::fit0_Bd2JpsiKstar(psd *res, int limitpars, string pdfprefix, bo
     if (h->GetSumOfWeights() > h->GetEntries()) {
       fitopt += "w";
       h->Fit(f1, fitopt.c_str(), "", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     } else {
       h->Fit(f1, fitopt.c_str(), "", xmin, xmax);
+      cout<<"Fitting strategy "<<fitopt.c_str()<<endl;
     }
   } else {
     h->Draw();

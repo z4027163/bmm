@@ -1,0 +1,1548 @@
+[FERMIHTC-SINGULARITY]: INFO -- No Singulariy image specified
+[FERMIHTC-SINGULARITY]: INFO -- Running job on the host machine
+
+[FERMIHTC-SINGULARITY]: INFO -- Running ./condor_exec.exe
+--> Environment
+Wed Feb 10 08:50:22 UTC 2021
+ckar-70304379-0-cmswn1849.fnal.gov
+Linux ckar-70304379-0-cmswn1849.fnal.gov 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 10 08:19:23 CST 2020 x86_64 x86_64 x86_64 GNU/Linux
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay        405758800 46828572 338295656  13% /
+tmpfs              65536        0     65536   0% /dev
+tmpfs           12344068        0  12344068   0% /sys/fs/cgroup
+shm                65536        0     65536   0% /dev/shm
+/dev/sda5      405758800 46828572 338295656  13% /tmp
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/gcoconfig.fnal.gov
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/annie.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/argoneut.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/cdf.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/cdms.opensciencegrid.org
+cvmfs2          41943040 21018125  20924915  51% /cvmfs/cms.cern.ch
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/cms-ib.cern.ch
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/coupp.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/d0.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/darkside.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/des.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/des.osgstorage.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/dune.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/dune.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/fermilab.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/fifeuser1.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/fifeuser2.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/fifeuser3.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/fifeuser4.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/gm2.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/icarus.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/lariat.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/larsoft.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/minerva.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/minerva.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/minos.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/mu2e.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/mu2e.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/nova.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/nova.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/oasis.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/sbnd.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/sbn.osgstorage.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/sbnd.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/seaquest.opensciencegrid.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/singularity.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/stash.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/uboone.opensciencegrid.org
+cvmfs2           1024000   960874     63127  94% /cvmfs/uboone.osgstorage.org
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/sft.cern.ch
+cvmfs2          41943040 22285827  19657213  54% /cvmfs/cms-lpc.opensciencegrid.org
+/dev/sda2       41153760 12044368  26995856  31% /etc/group
+tmpfs           12344068        0  12344068   0% /proc/acpi
+tmpfs           12344068        0  12344068   0% /proc/scsi
+tmpfs           12344068        0  12344068   0% /sys/firmware
+-> which root
+/storage/local/data1/condor/execute/dir_13612
+--> End of env testing
+--> Setup CMSSW
+/storage/local/data1/condor/execute/dir_13612
+Wed Feb 10 08:50:23 UTC 2021
+Bmm/
+Bmm/.git/
+Bmm/.git/branches/
+Bmm/.git/hooks/
+Bmm/.git/hooks/update.sample
+Bmm/.git/hooks/pre-rebase.sample
+Bmm/.git/hooks/post-update.sample
+Bmm/.git/hooks/pre-commit.sample
+Bmm/.git/hooks/prepare-commit-msg.sample
+Bmm/.git/hooks/pre-push.sample
+Bmm/.git/hooks/applypatch-msg.sample
+Bmm/.git/hooks/pre-applypatch.sample
+Bmm/.git/hooks/pre-receive.sample
+Bmm/.git/hooks/commit-msg.sample
+Bmm/.git/hooks/fsmonitor-watchman.sample
+Bmm/.git/info/
+Bmm/.git/info/exclude
+Bmm/.git/description
+Bmm/.git/refs/
+Bmm/.git/refs/heads/
+Bmm/.git/refs/heads/master
+Bmm/.git/refs/tags/
+Bmm/.git/refs/remotes/
+Bmm/.git/refs/remotes/origin/
+Bmm/.git/refs/remotes/origin/HEAD
+Bmm/.git/objects/
+Bmm/.git/objects/pack/
+Bmm/.git/objects/pack/pack-925be625dd69d6ba129c8c13fd644b8229354872.pack
+Bmm/.git/objects/pack/pack-925be625dd69d6ba129c8c13fd644b8229354872.idx
+Bmm/.git/objects/info/
+Bmm/.git/HEAD
+Bmm/.git/config
+Bmm/.git/logs/
+Bmm/.git/logs/refs/
+Bmm/.git/logs/refs/remotes/
+Bmm/.git/logs/refs/remotes/origin/
+Bmm/.git/logs/refs/remotes/origin/HEAD
+Bmm/.git/logs/refs/heads/
+Bmm/.git/logs/refs/heads/master
+Bmm/.git/logs/HEAD
+Bmm/.git/index
+Bmm/.git/packed-refs
+Bmm/.gitignore
+Bmm/README.md
+Bmm/RootAnalysis/
+Bmm/RootAnalysis/common/
+Bmm/RootAnalysis/common/AnalysisCuts.cc
+Bmm/RootAnalysis/common/AnalysisCuts.hh
+Bmm/RootAnalysis/common/AnalysisDistribution.cc
+Bmm/RootAnalysis/common/AnalysisDistribution.hh
+Bmm/RootAnalysis/common/HFMasses.hh
+Bmm/RootAnalysis/common/HistCutEfficiency.cc
+Bmm/RootAnalysis/common/HistCutEfficiency.hh
+Bmm/RootAnalysis/common/JSON.cc
+Bmm/RootAnalysis/common/JSON.hh
+Bmm/RootAnalysis/common/Lumi.cc
+Bmm/RootAnalysis/common/Lumi.hh
+Bmm/RootAnalysis/common/Makefile
+Bmm/RootAnalysis/common/PdTrigger.cc
+Bmm/RootAnalysis/common/PdTrigger.hh
+Bmm/RootAnalysis/common/PidData.cc
+Bmm/RootAnalysis/common/PidData.hh
+Bmm/RootAnalysis/common/PidTable.cc
+Bmm/RootAnalysis/common/PidTable.hh
+Bmm/RootAnalysis/common/ana.cc
+Bmm/RootAnalysis/common/ana.hh
+Bmm/RootAnalysis/common/anaLinkDef.h
+Bmm/RootAnalysis/common/dataset.cc
+Bmm/RootAnalysis/common/dataset.hh
+Bmm/RootAnalysis/common/fitPsYield.cc
+Bmm/RootAnalysis/common/fitPsYield.hh
+Bmm/RootAnalysis/common/hpl.cc
+Bmm/RootAnalysis/common/hpl.hh
+Bmm/RootAnalysis/common/hplLinkDef.h
+Bmm/RootAnalysis/common/initFunc.cc
+Bmm/RootAnalysis/common/initFunc.hh
+Bmm/RootAnalysis/common/json/
+Bmm/RootAnalysis/common/json/2016-HLT_DoubleMu4_3_Bs.lumi
+Bmm/RootAnalysis/common/json/2016-HLT_DoubleMu4_3_Jpsi_Displaced.lumi
+Bmm/RootAnalysis/common/json/Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON_MuonPhys_v2.lumi
+Bmm/RootAnalysis/common/json/Cert_190456-208686_8TeV_22Jan2013ReReco_Collisions12_JSON_MuonPhys.lumi
+Bmm/RootAnalysis/common/json/Cert_251168-260627_13TeV_PromptReco_Collisions15_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/Cert_254986-255031_13TeV_PromptReco_Collisions15_LOWPU_25ns_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/Cert_254986-255031_13TeV_PromptReco_Collisions15_LOWPU_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/Cert_271036-284044_13TeV_PromptReco_Collisions16_JSON_MuonPhys.lumi
+Bmm/RootAnalysis/common/json/Cert_271036-284044_13TeV_PromptReco_Collisions16_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/Cert_314472-316723_13TeV_PromptReco_Collisions18_JSON_MuonPhys.lumi
+Bmm/RootAnalysis/common/json/Cert_314472-316723_13TeV_PromptReco_Collisions18_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/Cert_AllRuns_7TeV-8TeV_ReReco_PromptReco_Collisions11-12_JSON_MuonPhys.lumi
+Bmm/RootAnalysis/common/json/Cert_AllRuns_7TeV-8TeV_ReReco_PromptReco_Collisions11-12_JSON_MuonPhys.txt
+Bmm/RootAnalysis/common/json/json-2011-muonphys.txt
+Bmm/RootAnalysis/common/json/json-2012-muonphys.txt
+Bmm/RootAnalysis/common/json/json-2016-muonphys.txt
+Bmm/RootAnalysis/common/json/json_DCSONLY.lumi
+Bmm/RootAnalysis/common/json/json_DCSONLY.txt
+Bmm/RootAnalysis/common/json/json_DCSONLY_stablePixel.txt
+Bmm/RootAnalysis/common/pidtables/
+Bmm/RootAnalysis/common/pidtables/2011-kaonNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2011-kaonPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2011-pionNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2011-pionPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2011-protonNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2011-protonPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-L1L2_data_all.dat
+Bmm/RootAnalysis/common/pidtables/2012-L3_data_all.dat
+Bmm/RootAnalysis/common/pidtables/2012-MuonID_data_all.dat
+Bmm/RootAnalysis/common/pidtables/2012-kaonNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-kaonPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-pionNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-pionPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-protonNegFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/pidtables/2012-protonPosFakeRate-mvaMuon.dat
+Bmm/RootAnalysis/common/selpoint.cc
+Bmm/RootAnalysis/common/selpoint.hh
+Bmm/RootAnalysis/common/util.cc
+Bmm/RootAnalysis/common/util.hh
+Bmm/RootAnalysis/common/utilLinkDef.h
+Bmm/RootAnalysis/common/obj/
+Bmm/RootAnalysis/common/obj/AnalysisCuts.o
+Bmm/RootAnalysis/common/obj/AnalysisDistribution.o
+Bmm/RootAnalysis/common/obj/PidTable.o
+Bmm/RootAnalysis/common/obj/PidData.o
+Bmm/RootAnalysis/common/obj/HistCutEfficiency.o
+Bmm/RootAnalysis/common/obj/selpoint.o
+Bmm/RootAnalysis/common/obj/dataset.o
+Bmm/RootAnalysis/common/obj/util.o
+Bmm/RootAnalysis/common/obj/hpl.o
+Bmm/RootAnalysis/common/obj/JSON.o
+Bmm/RootAnalysis/common/obj/PdTrigger.o
+Bmm/RootAnalysis/common/obj/Lumi.o
+Bmm/RootAnalysis/common/obj/ana.o
+Bmm/RootAnalysis/common/obj/AnalysisCutsDict.o
+Bmm/RootAnalysis/common/obj/AnalysisDistributionDict.o
+Bmm/RootAnalysis/common/obj/PidTableDict.o
+Bmm/RootAnalysis/common/obj/PidDataDict.o
+Bmm/RootAnalysis/common/obj/HistCutEfficiencyDict.o
+Bmm/RootAnalysis/common/obj/selpointDict.o
+Bmm/RootAnalysis/common/obj/datasetDict.o
+Bmm/RootAnalysis/common/obj/utilDict.o
+Bmm/RootAnalysis/common/obj/initFuncDict.o
+Bmm/RootAnalysis/common/obj/JSONDict.o
+Bmm/RootAnalysis/common/obj/hplDict.o
+Bmm/RootAnalysis/common/obj/PdTriggerDict.o
+Bmm/RootAnalysis/common/obj/LumiDict.o
+Bmm/RootAnalysis/common/obj/anaDict.o
+Bmm/RootAnalysis/common/obj/fitPsYieldDict.o
+Bmm/RootAnalysis/common/obj/initFunc.o
+Bmm/RootAnalysis/common/obj/fitPsYield.o
+Bmm/RootAnalysis/common/bin/
+Bmm/RootAnalysis/common/lib/
+Bmm/RootAnalysis/common/lib/datasetDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/HistCutEfficiencyDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/selpointDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/PidDataDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/AnalysisCutsDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/utilDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/PidTableDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/AnalysisDistributionDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/LumiDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/JSONDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/PdTriggerDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/hplDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/initFuncDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/anaDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/fitPsYieldDict_rdict.pcm
+Bmm/RootAnalysis/common/lib/libUtil.so
+Bmm/RootAnalysis/inclb/
+Bmm/RootAnalysis/inclb/.rootrc
+Bmm/RootAnalysis/inclb/Makefile
+Bmm/RootAnalysis/inclb/RedTreeData.hh
+Bmm/RootAnalysis/inclb/candAna.cc
+Bmm/RootAnalysis/inclb/candAna.hh
+Bmm/RootAnalysis/inclb/chains/
+Bmm/RootAnalysis/inclb/chains/v01/
+Bmm/RootAnalysis/inclb/chains/v01/runAll.jobs
+Bmm/RootAnalysis/inclb/cuts/
+Bmm/RootAnalysis/inclb/cuts/candAna.2015.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_HIL2Mu3.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu17.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu20.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu24.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu27.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu300.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu34.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu50.cuts
+Bmm/RootAnalysis/inclb/cuts/candAna_Mu8.cuts
+Bmm/RootAnalysis/inclb/cuts/inclbReader.2015
+Bmm/RootAnalysis/inclb/cuts/inclbReader.lowpu
+Bmm/RootAnalysis/inclb/genAnalysis.cc
+Bmm/RootAnalysis/inclb/genAnalysis.hh
+Bmm/RootAnalysis/inclb/inclbReader.cc
+Bmm/RootAnalysis/inclb/inclbReader.hh
+Bmm/RootAnalysis/inclb/plotClass.cc
+Bmm/RootAnalysis/inclb/plotClass.hh
+Bmm/RootAnalysis/inclb/plotClass.icc
+Bmm/RootAnalysis/inclb/plotWork.cc
+Bmm/RootAnalysis/inclb/plotWork.hh
+Bmm/RootAnalysis/inclb/preselection.cc
+Bmm/RootAnalysis/inclb/preselection.hh
+Bmm/RootAnalysis/inclb/rootalias.C
+Bmm/RootAnalysis/inclb/rootlogon.C
+Bmm/RootAnalysis/inclb/runInclB.cc
+Bmm/RootAnalysis/inclb/runInclBNoComp.csh
+Bmm/RootAnalysis/inclb/treeReader01.cc
+Bmm/RootAnalysis/inclb/treeReader01.hh
+Bmm/RootAnalysis/inclb/treeReader01.icc
+Bmm/RootAnalysis/macros/
+Bmm/RootAnalysis/macros/.rootrc
+Bmm/RootAnalysis/macros/plotFake.hh~
+Bmm/RootAnalysis/macros/ReaderData.hh
+Bmm/RootAnalysis/macros/anaNumbers.cc
+Bmm/RootAnalysis/macros/anaNumbers.hh
+Bmm/RootAnalysis/macros/bmmReader.cc
+Bmm/RootAnalysis/macros/bmmReader.hh
+Bmm/RootAnalysis/macros/candAna.cc
+Bmm/RootAnalysis/macros/candAna.hh
+Bmm/RootAnalysis/macros/candAnaBd2DstarPi.cc
+Bmm/RootAnalysis/macros/candAnaBd2DstarPi.hh
+Bmm/RootAnalysis/macros/candAnaBd2JpsiKstar.cc
+Bmm/RootAnalysis/macros/candAnaBd2JpsiKstar.hh
+Bmm/RootAnalysis/macros/candAnaBs2JpsiPhi.cc
+Bmm/RootAnalysis/macros/candAnaBs2JpsiPhi.hh
+Bmm/RootAnalysis/macros/candAnaBs2Jpsif0.cc
+Bmm/RootAnalysis/macros/candAnaBs2Jpsif0.hh
+Bmm/RootAnalysis/macros/candAnaBu2JpsiK.cc
+Bmm/RootAnalysis/macros/candAnaBu2JpsiK.hh
+Bmm/RootAnalysis/macros/candAnaDstar.cc
+Bmm/RootAnalysis/macros/candAnaDstar.hh
+Bmm/RootAnalysis/macros/candAnaFake.cc
+Bmm/RootAnalysis/macros/candAnaFake.hh
+Bmm/RootAnalysis/macros/candAnaHh.cc
+Bmm/RootAnalysis/macros/candAnaHh.hh
+Bmm/RootAnalysis/macros/candAnaMuMu.cc
+Bmm/RootAnalysis/macros/candAnaMuMu.hh
+Bmm/RootAnalysis/macros/candAnaRecoil.cc
+Bmm/RootAnalysis/macros/candAnaRecoil.hh
+Bmm/RootAnalysis/macros/chains/
+Bmm/RootAnalysis/macros/chains/2018/
+Bmm/RootAnalysis/macros/chains/2018/runAll.jobs
+Bmm/RootAnalysis/macros/chains/abdt-2/
+Bmm/RootAnalysis/macros/chains/abdt-2/runAll.jobs
+Bmm/RootAnalysis/macros/chains/abdt-4/
+Bmm/RootAnalysis/macros/chains/abdt-4/runAll.jobs
+Bmm/RootAnalysis/macros/chains/abdt/
+Bmm/RootAnalysis/macros/chains/abdt/runAll.jobs
+Bmm/RootAnalysis/macros/chains/gentest/
+Bmm/RootAnalysis/macros/chains/gentest/runAll.jobs
+Bmm/RootAnalysis/macros/chains/runAll.jobs
+Bmm/RootAnalysis/macros/chains/s00/
+Bmm/RootAnalysis/macros/chains/s00/runAll.jobs
+Bmm/RootAnalysis/macros/chains/s01/
+Bmm/RootAnalysis/macros/chains/s01/runAll.jobs
+Bmm/RootAnalysis/macros/chains/s02/
+Bmm/RootAnalysis/macros/chains/s02/runAll.jobs
+Bmm/RootAnalysis/macros/chains/unl/
+Bmm/RootAnalysis/macros/chains/unl/ccrab_BMM4_BdToJpsiKstar_MC_13Tev.chain
+Bmm/RootAnalysis/macros/chains/unl/ccrab_BMM4_BsToJpsiPhi_MC_13Tev.chain
+Bmm/RootAnalysis/macros/chains/unl/ccrab_BMM4_crabtest_Charmonium_Run2015B.chain
+Bmm/RootAnalysis/macros/chains/unl/crab_BMM4_BdToJpsiKstar_MC_13Tev.chain
+Bmm/RootAnalysis/macros/chains/unl/crab_BMM4_BsToJpsiPhi_MC_13Tev.chain
+Bmm/RootAnalysis/macros/chains/unl/crab_BMM4_crabtest_Charmonium_Run2015B.chain
+Bmm/RootAnalysis/macros/chains/ups/
+Bmm/RootAnalysis/macros/chains/ups/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v00/
+Bmm/RootAnalysis/macros/chains/v00/cv00-Charmonium__Run2015B-PromptReco-v1
+Bmm/RootAnalysis/macros/chains/v01/
+Bmm/RootAnalysis/macros/chains/v01/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v02/
+Bmm/RootAnalysis/macros/chains/v02/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v03/
+Bmm/RootAnalysis/macros/chains/v03/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v04/
+Bmm/RootAnalysis/macros/chains/v04/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v05/
+Bmm/RootAnalysis/macros/chains/v05/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v07/
+Bmm/RootAnalysis/macros/chains/v07/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v08/
+Bmm/RootAnalysis/macros/chains/v08/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v09/
+Bmm/RootAnalysis/macros/chains/v09/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v10/
+Bmm/RootAnalysis/macros/chains/v10/runAll.jobs
+Bmm/RootAnalysis/macros/chains/v11/
+Bmm/RootAnalysis/macros/chains/v11/runAll.jobs
+Bmm/RootAnalysis/macros/cms-tdr.C
+Bmm/RootAnalysis/macros/cuts.hh
+Bmm/RootAnalysis/macros/cuts/
+Bmm/RootAnalysis/macros/cuts/baseCuts.2011.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2012.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2016.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2016BF.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2016BFs01.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2016GH.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2016GHs01.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2017.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.2018.cuts
+Bmm/RootAnalysis/macros/cuts/baseCuts.nobdt.cuts
+Bmm/RootAnalysis/macros/cuts/bmmReader.2011
+Bmm/RootAnalysis/macros/cuts/bmmReader.2011.anasel
+Bmm/RootAnalysis/macros/cuts/bmmReader.2011.fake
+Bmm/RootAnalysis/macros/cuts/bmmReader.2011.nopreselection
+Bmm/RootAnalysis/macros/cuts/bmmReader.2012
+Bmm/RootAnalysis/macros/cuts/bmmReader.2012.anasel
+Bmm/RootAnalysis/macros/cuts/bmmReader.2012.fake
+Bmm/RootAnalysis/macros/cuts/bmmReader.2012.nopreselection
+Bmm/RootAnalysis/macros/cuts/bmmReader.2015
+Bmm/RootAnalysis/macros/cuts/bmmReader.2016
+Bmm/RootAnalysis/macros/cuts/bmmReader.2016.anasel
+Bmm/RootAnalysis/macros/cuts/bmmReader.2016.fake
+Bmm/RootAnalysis/macros/cuts/bmmReader.2016.nopreselection
+Bmm/RootAnalysis/macros/cuts/bmmReader.2017
+Bmm/RootAnalysis/macros/cuts/bmmReader.2018
+Bmm/RootAnalysis/macros/cuts/bmmReader.Dstar.2012
+Bmm/RootAnalysis/macros/cuts/bmmReader.Dstar.2015
+Bmm/RootAnalysis/macros/cuts/bmmReader.Hh
+Bmm/RootAnalysis/macros/cuts/bmmReader.Dstar.2016
+Bmm/RootAnalysis/macros/cuts/bmmReader.Dstar.2017
+Bmm/RootAnalysis/macros/cuts/bmmReader.Dstar.mc
+Bmm/RootAnalysis/macros/cuts/bmmReader.Jpsi
+Bmm/RootAnalysis/macros/cuts/bmmReader.JpsiMc
+Bmm/RootAnalysis/macros/cuts/bmmReader.dbx
+Bmm/RootAnalysis/macros/cuts/bmmReader.fakeMC
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bc2JpsiMuNu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2JpsiKstar
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2KK
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2KPi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2MuMu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2PiMuMu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2PiMuNu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bd2PiPi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2JpsiPhi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2Jpsif0
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2KK
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2KMuNu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2KPi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2MuMu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bs2PiPi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bu2JpsiK
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Bu2PiMuMu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-BuToJpsiPiWrong
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Lb2PK
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Lb2PMuNu
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-Lb2PPi
+Bmm/RootAnalysis/macros/cuts/bmmReader.mix-wrongReco
+Bmm/RootAnalysis/macros/cuts/bmmReader.recoil
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bd2JpsiKstar
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bd2MuMu
+Bmm/RootAnalysis/macros/cuts/boxes.Jpsi.cuts
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bs2JpsiPhi
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bs2Jpsif0
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bs2MuMu
+Bmm/RootAnalysis/macros/cuts/bmmReader.scale-Bu2JpsiK
+Bmm/RootAnalysis/macros/cuts/bmmReader.singleMuon.2016
+Bmm/RootAnalysis/macros/cuts/boxes.Bd2JpsiKstar.cuts
+Bmm/RootAnalysis/macros/cuts/boxes.Bs2JpsiPhi.cuts
+Bmm/RootAnalysis/macros/cuts/boxes.Bs2MuMu.cuts
+Bmm/RootAnalysis/macros/cuts/boxes.Bu2JpsiK.cuts
+Bmm/RootAnalysis/macros/cuts/boxes.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBc2JpsiMuNu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstar.anasel.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstar.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstar.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstar.nopreselection.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstar.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstarAsBs.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstarAsBu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstarWrong.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2JpsiKstarWrong.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2KK.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2KPi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2MuMu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2MuMu.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2PiMuMu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2PiMuNu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBd2PiPi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhi.anasel.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhi.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhi.nopreselection.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhi.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhiAsBd.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPhiAsBu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2JpsiPiPiAsBs.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2Jpsif0.anasel.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2Jpsif0.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2Jpsif0.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2Jpsif0.nopreselection.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2Jpsif0.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2KK.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2KMuNu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2KPi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2MuMu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2MuMu.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBs2PiPi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.anasel.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.nopreselection.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.notrigger.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiK.scale.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2JpsiPiAsBu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaBu2PiMuMu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaDstar.2012.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaDstar.2015.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaDstar.2016.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaDstar.2017.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaDstar.mc.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaFake.310.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaFake.3122.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaFake.333.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaFake.443.cuts
+Bmm/RootAnalysis/macros/cuts/f0.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaFake.MC.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaHh.2015.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaJpsi.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaJpsiMc.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaLb2PK.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaLb2PMuNu.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaLb2PPi.mix.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaMuMu.anasel.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaMuMu.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaMuMu.nopreselection.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaMuMu.notrigger.cuts
+Bmm/RootAnalysis/macros/cuts/candAnaRecoil.cuts
+Bmm/RootAnalysis/macros/cuts/jpsi.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.2011.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.2012.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.2016.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.2017.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.2018.cuts
+Bmm/RootAnalysis/macros/cuts/jpsimuons.cuts
+Bmm/RootAnalysis/macros/cuts/kstar.cuts
+Bmm/RootAnalysis/macros/cuts/muons.2011.cuts
+Bmm/RootAnalysis/macros/cuts/muons.2012.cuts
+Bmm/RootAnalysis/macros/cuts/muons.2016.cuts
+Bmm/RootAnalysis/macros/cuts/muons.2017.cuts
+Bmm/RootAnalysis/macros/cuts/muons.cuts
+Bmm/RootAnalysis/macros/cuts/ntrigger.2011.cuts
+Bmm/RootAnalysis/macros/cuts/ntrigger.2012.cuts
+Bmm/RootAnalysis/macros/cuts/ntrigger.2016.cuts
+Bmm/RootAnalysis/macros/cuts/ntrigger.2018.cuts
+Bmm/RootAnalysis/macros/cuts/phi.cuts
+Bmm/RootAnalysis/macros/cuts/plotClass.cuts
+Bmm/RootAnalysis/macros/cuts/scale.2016BFs01.cuts
+Bmm/RootAnalysis/macros/cuts/scale.2016GHs01.cuts
+Bmm/RootAnalysis/macros/cuts/tracks.cuts
+Bmm/RootAnalysis/macros/cuts/triggerBs.cuts
+Bmm/RootAnalysis/macros/cuts/triggerDisplacedJpsi.cuts
+Bmm/RootAnalysis/macros/cuts/triggerMixBs.cuts
+Bmm/RootAnalysis/macros/cuts/triggerMixDisplacedJpsi.cuts
+Bmm/RootAnalysis/macros/cuts/triggerMixRare.cuts
+Bmm/RootAnalysis/macros/danekUtils.h
+Bmm/RootAnalysis/macros/effTemplate.dat
+Bmm/RootAnalysis/macros/fakeTemplate.dat
+Bmm/RootAnalysis/macros/fakeTemplatePt10.dat
+Bmm/RootAnalysis/macros/fakeTemplatePt5.dat
+Bmm/RootAnalysis/macros/fakeTemplatePt7.dat
+Bmm/RootAnalysis/macros/genAnalysis.cc
+Bmm/RootAnalysis/macros/genAnalysis.hh
+Bmm/RootAnalysis/macros/plotBDT.cc
+Bmm/RootAnalysis/macros/plotBDT.hh
+Bmm/RootAnalysis/macros/plotClass.cc
+Bmm/RootAnalysis/macros/plotClass.hh
+Bmm/RootAnalysis/macros/plotClass.icc
+Bmm/RootAnalysis/macros/Makefile
+Bmm/RootAnalysis/macros/plotFake.hh
+Bmm/RootAnalysis/macros/plotRecoil.cc
+Bmm/RootAnalysis/macros/plotRecoil.hh
+Bmm/RootAnalysis/macros/plotReducedOverlays.cc
+Bmm/RootAnalysis/macros/plotReducedOverlays.hh
+Bmm/RootAnalysis/macros/plotResults.2016.files
+Bmm/RootAnalysis/macros/plotResults.2016BF.files
+Bmm/RootAnalysis/macros/plotResults.2016GH.files
+Bmm/RootAnalysis/macros/plotResults.2017.files
+Bmm/RootAnalysis/macros/plotResults.cc
+Bmm/RootAnalysis/macros/plotResults.hh
+Bmm/RootAnalysis/macros/plotResults.local.files
+Bmm/RootAnalysis/macros/plotStuff.cc
+Bmm/RootAnalysis/macros/plotStuff.hh
+Bmm/RootAnalysis/macros/plotTrigger.cc
+Bmm/RootAnalysis/macros/plotTrigger.hh
+Bmm/RootAnalysis/macros/plotWork.cc
+Bmm/RootAnalysis/macros/plotWork.hh
+Bmm/RootAnalysis/macros/preselection.cc
+Bmm/RootAnalysis/macros/preselection.hh
+Bmm/RootAnalysis/macros/pvTreeData.hh
+Bmm/RootAnalysis/macros/qnd/
+Bmm/RootAnalysis/macros/qnd/bc.C
+Bmm/RootAnalysis/macros/qnd/bpixMuonHits.C
+Bmm/RootAnalysis/macros/qnd/checkData.C
+Bmm/RootAnalysis/macros/qnd/compare.C
+Bmm/RootAnalysis/macros/qnd/compareBDT.C
+Bmm/RootAnalysis/macros/qnd/cowboys.C
+Bmm/RootAnalysis/macros/qnd/dbxPol2Local.C
+Bmm/RootAnalysis/macros/qnd/fakeRate.C
+Bmm/RootAnalysis/macros/qnd/fitAllMass.C
+Bmm/RootAnalysis/macros/qnd/fitProblems.C
+Bmm/RootAnalysis/macros/qnd/fsfu.C
+Bmm/RootAnalysis/macros/qnd/invertedMuonID.C
+Bmm/RootAnalysis/macros/qnd/jetht.C
+Bmm/RootAnalysis/macros/qnd/l3muons.C
+Bmm/RootAnalysis/macros/qnd/lsRootFile.C
+Bmm/RootAnalysis/macros/qnd/newBsFitting.C
+Bmm/RootAnalysis/macros/qnd/normFitting.C
+Bmm/RootAnalysis/macros/qnd/overlayBd2Kp2MuMu.C
+Bmm/RootAnalysis/macros/qnd/plotMC.C
+Bmm/RootAnalysis/macros/qnd/pubPlots.C
+Bmm/RootAnalysis/macros/qnd/pv.C
+Bmm/RootAnalysis/macros/qnd/redVsSmall.C
+Bmm/RootAnalysis/macros/qnd/run1VsRun2.C
+Bmm/RootAnalysis/macros/qnd/sbs.C
+Bmm/RootAnalysis/macros/qnd/scanBDT.C
+Bmm/RootAnalysis/macros/qnd/teff.C
+Bmm/RootAnalysis/macros/qnd/teff2.C
+Bmm/RootAnalysis/macros/qnd/tosCheck.C
+Bmm/RootAnalysis/macros/qnd/triggerEff.C
+Bmm/RootAnalysis/macros/qnd/triggerEffAveSys.C
+Bmm/RootAnalysis/macros/qnd/twoCuts.C
+Bmm/RootAnalysis/macros/qnd/valHFSV.C
+Bmm/RootAnalysis/macros/redTreeData.hh
+Bmm/RootAnalysis/macros/runAnaBDTv2NoComp.csh
+Bmm/RootAnalysis/macros/runAnaBDTv3NoComp.csh
+Bmm/RootAnalysis/macros/runBmm.cc
+Bmm/RootAnalysis/macros/runBmmNoComp.csh
+Bmm/RootAnalysis/macros/runLocal
+Bmm/RootAnalysis/macros/plotFake.cc~
+Bmm/RootAnalysis/macros/runPlotNoComp.csh
+Bmm/RootAnalysis/macros/setupReader.cc
+Bmm/RootAnalysis/macros/setupReader.hh
+Bmm/RootAnalysis/macros/tmva1.cc
+Bmm/RootAnalysis/macros/tmva1.hh
+Bmm/RootAnalysis/macros/treeReader01.cc
+Bmm/RootAnalysis/macros/treeReader01.hh
+Bmm/RootAnalysis/macros/treeReader01.icc
+Bmm/RootAnalysis/macros/umlLifetime.cc
+Bmm/RootAnalysis/macros/umlLifetime.hh
+Bmm/RootAnalysis/macros/weights/
+Bmm/RootAnalysis/macros/weights/TMVA-0-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-0-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-0-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-100-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-100-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-100-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-101-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-101-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-101-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1919-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1919-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-1919-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-2-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-2-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-2-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-3-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-3-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-3-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-32959-Events0_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-32959-Events1_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-32959-Events2_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/pidtables/
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-13Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-211Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-2212Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2011-321Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-13Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-211Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-2212Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Neg-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Neg-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Pos-am-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2012-321Pos-bmm4-42.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-13Neg-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-13Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-13Pos-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-13Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-211Neg-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-211Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-211Pos-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-211Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-2212Neg-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-2212Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-2212Pos-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-2212Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-321Neg-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-321Neg-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-321Pos-am-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/pidtables/2016-321Pos-bmm4-25.dat
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-2.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-00.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-10.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-17.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-19.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-24.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-25.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-26.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-B-42.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-E-00.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-E-10.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-E-17.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-E-19.weights.xml
+Bmm/RootAnalysis/macros/weights/TMVA-muonid-bmm4-E-26.weights.xml
+Bmm/RootAnalysis/macros/weights/bmm4_26_BE_NOmuonHitCombNOouterchi2-B_BDT.weights.xml
+Bmm/RootAnalysis/macros/weights/bmm4_26_BE_NOmuonHitCombNOouterchi2-E_BDT.weights.xml
+Bmm/RootAnalysis/macros/obj/
+Bmm/RootAnalysis/macros/obj/plotBDTDict.o
+Bmm/RootAnalysis/macros/obj/umlLifetimeDict.o
+Bmm/RootAnalysis/macros/obj/candAnaBs2JpsiPhi.o
+Bmm/RootAnalysis/macros/obj/candAnaBd2DstarPi.o
+Bmm/RootAnalysis/macros/obj/candAnaBu2JpsiKDict.o
+Bmm/RootAnalysis/macros/obj/candAnaBd2DstarPiDict.o
+Bmm/RootAnalysis/macros/obj/genAnalysis.o
+Bmm/RootAnalysis/macros/obj/setupReader.o
+Bmm/RootAnalysis/macros/obj/plotClassnewDict.o
+Bmm/RootAnalysis/macros/obj/plotReducedOverlays.o
+Bmm/RootAnalysis/macros/obj/plotRecoilDict.o
+Bmm/RootAnalysis/macros/obj/plotStuffDict.o
+Bmm/RootAnalysis/macros/obj/plotTriggerDict.o
+Bmm/RootAnalysis/macros/obj/candAna.o
+Bmm/RootAnalysis/macros/obj/candAnaBu2JpsiK.o
+Bmm/RootAnalysis/macros/obj/candAnaHh.o
+Bmm/RootAnalysis/macros/obj/candAnaRecoil.o
+Bmm/RootAnalysis/macros/obj/candAnaDict.o
+Bmm/RootAnalysis/macros/obj/candAnaDstarDict.o
+Bmm/RootAnalysis/macros/obj/candAnaRecoilDict.o
+Bmm/RootAnalysis/macros/obj/plotClassnew.o
+Bmm/RootAnalysis/macros/obj/plotFakeDict.o
+Bmm/RootAnalysis/macros/obj/plotReducedOverlaysDict.o
+Bmm/RootAnalysis/macros/obj/candAnaDstar.o
+Bmm/RootAnalysis/macros/obj/candAnaFake.o
+Bmm/RootAnalysis/macros/obj/bmmReaderDict.o
+Bmm/RootAnalysis/macros/obj/candAnaBs2Jpsif0Dict.o
+Bmm/RootAnalysis/macros/obj/candAnaFakeDict.o
+Bmm/RootAnalysis/macros/obj/preselection.o
+Bmm/RootAnalysis/macros/obj/anaNumbers.o
+Bmm/RootAnalysis/macros/obj/anaNumbersDict.o
+Bmm/RootAnalysis/macros/obj/plotResultsnewDict.o
+Bmm/RootAnalysis/macros/obj/plotClass.o
+Bmm/RootAnalysis/macros/obj/plotWork.o
+Bmm/RootAnalysis/macros/obj/plotRecoil.o
+Bmm/RootAnalysis/macros/obj/plotStuff.o
+Bmm/RootAnalysis/macros/obj/plotBDT.o
+Bmm/RootAnalysis/macros/obj/plotTrigger.o
+Bmm/RootAnalysis/macros/obj/umlLifetime.o
+Bmm/RootAnalysis/macros/obj/tmva1.o
+Bmm/RootAnalysis/macros/obj/candAnaBs2JpsiPhiDict.o
+Bmm/RootAnalysis/macros/obj/candAnaBd2JpsiKstarDict.o
+Bmm/RootAnalysis/macros/obj/treeReader01.o
+Bmm/RootAnalysis/macros/obj/genAnalysisDict.o
+Bmm/RootAnalysis/macros/obj/plotFake.o
+Bmm/RootAnalysis/macros/obj/plotWorkDict.o
+Bmm/RootAnalysis/macros/obj/tmva1Dict.o
+Bmm/RootAnalysis/macros/obj/bmmReader.o
+Bmm/RootAnalysis/macros/obj/candAnaMuMu.o
+Bmm/RootAnalysis/macros/obj/candAnaBs2Jpsif0.o
+Bmm/RootAnalysis/macros/obj/candAnaBd2JpsiKstar.o
+Bmm/RootAnalysis/macros/obj/candAnaMuMuDict.o
+Bmm/RootAnalysis/macros/obj/candAnaHhDict.o
+Bmm/RootAnalysis/macros/obj/runBmm.o
+Bmm/RootAnalysis/macros/obj/runPlot.o
+Bmm/RootAnalysis/macros/obj/treeReader01Dict.o
+Bmm/RootAnalysis/macros/obj/plotResultsnew.o
+Bmm/RootAnalysis/macros/bin/
+Bmm/RootAnalysis/macros/bin/runPlot
+Bmm/RootAnalysis/macros/lib/
+Bmm/RootAnalysis/macros/lib/TAna01EventDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TAnaCandDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TAnaJetDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TAnaMuonDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TAnaTrackDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TAnaVertexDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TGenCandDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TSimpleTrackDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TTrgObjDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/TTrgObjv2Dict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/AnalysisCutsDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/AnalysisDistributionDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/HistCutEfficiencyDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/JSONDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/LumiDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/PdTriggerDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/PidDataDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/PidTableDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/anaDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/datasetDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/fitPsYieldDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/hplDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/initFuncDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/selpointDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/utilDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/anaNumbersDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/genAnalysisDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/treeReader01Dict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/plotClassnewDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/plotFakeDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/plotResultsnewDict_rdict.pcm
+Bmm/RootAnalysis/macros/lib/libAnaClasses.so
+Bmm/RootAnalysis/macros/lib/libAna00.so
+Bmm/RootAnalysis/macros/lib/libUtil.so
+Bmm/RootAnalysis/macros/plotClassnew.cc
+Bmm/RootAnalysis/macros/plotClassnew.cc~
+Bmm/RootAnalysis/macros/plotClassnew.hh
+Bmm/RootAnalysis/macros/plotClassnew.hh~
+Bmm/RootAnalysis/macros/logs/
+Bmm/RootAnalysis/macros/logs/job_2017_9684492_0.log
+Bmm/RootAnalysis/macros/logs/job_2018_9684493_0.log
+Bmm/RootAnalysis/macros/logs/job_2017_9684492_0.stderr
+Bmm/RootAnalysis/macros/logs/job_2017_9684492_0.stdout
+Bmm/RootAnalysis/macros/logs/job_2018_9684493_0.stderr
+Bmm/RootAnalysis/macros/logs/job_2018_9684493_0.stdout
+Bmm/RootAnalysis/macros/plotResultsnew.cc
+Bmm/RootAnalysis/macros/prodDigiReco_c.sh
+Bmm/RootAnalysis/macros/copyfile_Guido.sh
+Bmm/RootAnalysis/macros/plotResultsnew.cc~
+Bmm/RootAnalysis/macros/plotResultsnew.hh
+Bmm/RootAnalysis/macros/plotResultsnew.hh~
+Bmm/RootAnalysis/macros/plotResultsnew_array.cc
+Bmm/RootAnalysis/macros/redTreeDatanew.hh
+Bmm/RootAnalysis/macros/redTreeDatanew.hh~
+Bmm/RootAnalysis/macros/redTreeDatanew_array.hh
+Bmm/RootAnalysis/macros/2018/
+Bmm/RootAnalysis/macros/2018/plotResults.2018.files~
+Bmm/RootAnalysis/macros/2018/plotResults.2018.files2
+Bmm/RootAnalysis/macros/2018/baseCuts.2018.cuts~
+Bmm/RootAnalysis/macros/2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-combBg-mode0-chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-combBg-AM-mode0-chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-sl-chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-hh-chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-data-scaled-background-chan0.pdf
+Bmm/RootAnalysis/macros/2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-combBg-mode0-chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-sl-chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-hh-chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-data-background-chan1.pdf
+Bmm/RootAnalysis/macros/2018/stacks-2018.root
+Bmm/RootAnalysis/macros/2018/plotResultsnew.2018.tex
+Bmm/RootAnalysis/macros/2018/baseCuts.2018.cuts
+Bmm/RootAnalysis/macros/2018/bdt2018-data-scaled-background-chan1.pdf
+Bmm/RootAnalysis/macros/2018/plotResults.2018.files
+Bmm/RootAnalysis/macros/2018/copy.sh~
+Bmm/RootAnalysis/macros/2018/copy.sh
+Bmm/RootAnalysis/macros/2018/cp.log
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-bg-chan0.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-data-background-chan0.pdf
+Bmm/RootAnalysis/macros/2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-combBg-AM-mode0-chan1.pdf
+Bmm/RootAnalysis/macros/2018/bdt2018-rare-bg-chan1.pdf
+Bmm/RootAnalysis/macros/2018/plotResultsnew.2018.root
+Bmm/RootAnalysis/macros/2017/
+Bmm/RootAnalysis/macros/2017/plotResults.2017.files~
+Bmm/RootAnalysis/macros/2017/bdt2017-data-background-chan1.pdf
+Bmm/RootAnalysis/macros/2017/plotFake.2017.tex
+Bmm/RootAnalysis/macros/2017/baseCuts.2017.cuts~
+Bmm/RootAnalysis/macros/2017/bdt2017-combBg-mode0-chan1.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-hh-chan1.pdf
+Bmm/RootAnalysis/macros/2017/plotResultsnew.2017.tex
+Bmm/RootAnalysis/macros/2017/.2017.root
+Bmm/RootAnalysis/macros/2017/plotResultsnew.2017.root
+Bmm/RootAnalysis/macros/2017/bdt2017-combBg-mode0-chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-sl-chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-hh-chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-data-background-chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_notabenefit0_hNorm_bdt2017_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2017/norm_failedfit0_hNorm_bdt2017_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-combBg-AM-mode0-chan1.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-data-scaled-background-chan1.pdf
+Bmm/RootAnalysis/macros/2017/plotResults.2017.filesold
+Bmm/RootAnalysis/macros/2017/.2017.tex
+Bmm/RootAnalysis/macros/2017/norm_notabene2fit0_hNorm_bdt2017_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2017/norm_fit1_hNorm_bdt2017_bspsiphiData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-sl-chan1.pdf
+Bmm/RootAnalysis/macros/2017/stacks-2017.root
+Bmm/RootAnalysis/macros/2017/stacks-bdt2017.root
+Bmm/RootAnalysis/macros/2017/plotResults.2017.files
+Bmm/RootAnalysis/macros/2017/plotFake.2017.root
+Bmm/RootAnalysis/macros/2017/baseCuts.2017.cuts
+Bmm/RootAnalysis/macros/2017/copy.sh~
+Bmm/RootAnalysis/macros/2017/cp.log
+Bmm/RootAnalysis/macros/2017/copy.sh
+Bmm/RootAnalysis/macros/2017/norm_notabenefit0_hNorm_bdt2017_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_notabene2fit0_hNorm_bdt2017_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_fit0_hNorm_bdt2017_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_failedfit0_hNorm_bdt2017_bupsikData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_fit1_hNorm_bdt2017_bspsiphiData_1D_chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-combBg-AM-mode0-chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-bg-chan0.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-data-scaled-background-chan0.pdf
+Bmm/RootAnalysis/macros/2017/norm_fit0_hNorm_bdt2017_bupsikData_1D_chan1.pdf
+Bmm/RootAnalysis/macros/2017/bdt2017-rare-bg-chan1.pdf
+Bmm/RootAnalysis/macros/submitjob_2017.py~
+Bmm/RootAnalysis/macros/prodDigiReco.sh~
+Bmm/RootAnalysis/macros/condor_sub17.txt
+Bmm/RootAnalysis/macros/condor_sub.txt
+Bmm/RootAnalysis/macros/README.md
+Bmm/RootAnalysis/macros/plotFake.cc
+Bmm/RootAnalysis/macros/submitjobc.py~
+Bmm/RootAnalysis/macros/prodDigiReco_2017.sh
+Bmm/RootAnalysis/macros/presentation.tex
+Bmm/RootAnalysis/macros/.__afsEFB9
+Bmm/RootAnalysis/macros/submitjob_2017.py
+Bmm/RootAnalysis/macros/.git/
+Bmm/RootAnalysis/macros/.git/refs/
+Bmm/RootAnalysis/macros/.git/refs/heads/
+Bmm/RootAnalysis/macros/.git/refs/tags/
+Bmm/RootAnalysis/macros/.git/branches/
+Bmm/RootAnalysis/macros/.git/description
+Bmm/RootAnalysis/macros/.git/hooks/
+Bmm/RootAnalysis/macros/.git/hooks/applypatch-msg.sample
+Bmm/RootAnalysis/macros/.git/hooks/commit-msg.sample
+Bmm/RootAnalysis/macros/.git/hooks/post-update.sample
+Bmm/RootAnalysis/macros/.git/hooks/pre-applypatch.sample
+Bmm/RootAnalysis/macros/.git/hooks/pre-commit.sample
+Bmm/RootAnalysis/macros/.git/hooks/pre-push.sample
+Bmm/RootAnalysis/macros/.git/hooks/pre-rebase.sample
+Bmm/RootAnalysis/macros/.git/hooks/prepare-commit-msg.sample
+Bmm/RootAnalysis/macros/.git/hooks/update.sample
+Bmm/RootAnalysis/macros/.git/info/
+Bmm/RootAnalysis/macros/.git/info/exclude
+Bmm/RootAnalysis/macros/.git/objects/
+Bmm/RootAnalysis/macros/.git/objects/pack/
+Bmm/RootAnalysis/macros/.git/objects/info/
+Bmm/RootAnalysis/macros/.git/HEAD
+Bmm/RootAnalysis/macros/.git/config
+Bmm/RootAnalysis/macros/submitjob.py
+Bmm/RootAnalysis/macros/presentation.aux
+Bmm/RootAnalysis/macros/x509up_u56005
+Bmm/RootAnalysis/macros/plotFakenew.cc
+Bmm/RootAnalysis/macros/plotResultsnew_diffps.cc
+Bmm/RootAnalysis/macros/submitjob.py~
+Bmm/RootAnalysis/macros/runPlot.cc
+Bmm/RootAnalysis/macros/presentation.tex~
+Bmm/RootAnalysis/macros/prodDigiReco_c.sh~
+Bmm/RootAnalysis/macros/submitjobc_sub.txt~
+Bmm/RootAnalysis/macros/plotResults.2016BF.files~
+Bmm/RootAnalysis/macros/.#filtereff_2017.cc
+Bmm/RootAnalysis/macros/prodDigiReco.sh
+Bmm/RootAnalysis/macros/copyfile_Guido.sh~
+Bmm/RootAnalysis/macros/trigeff/
+Bmm/RootAnalysis/macros/trigeff/w_trigger_Jpsi_2017.root
+Bmm/RootAnalysis/macros/trigeff/w_trigger_Jpsi_2017_old.root
+Bmm/RootAnalysis/macros/trigeff/w_trigger_Jpsi_2018.root
+Bmm/RootAnalysis/macros/trigeff/triggerefficiency.cc
+Bmm/RootAnalysis/macros/trigeff/mergetrig.cc
+Bmm/RootAnalysis/macros/trigeff/Makefile
+Bmm/RootAnalysis/macros/trigeff/prodDigiReco_2017.sh~
+Bmm/RootAnalysis/macros/trigeff/submitjob.py~
+Bmm/RootAnalysis/macros/trigeff/prodDigiReco_2017.sh
+Bmm/RootAnalysis/macros/trigeff/submitjob.py
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/triggerefficiency.cc~
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/triggeroverlay.cc
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Trigger_efficiency_2017_bupsikMcComb_0.pdf
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/triggeroverlay.cc~
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Makefile~
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Makefile
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Trigger_efficiency_dimuon_2017_bupsikMcComb_0.pdf
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/trigcal
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Trigger_efficiency_2017_bupsikMcComb_1.pdf
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/triggerefficiency.cc
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/trigeff
+Bmm/RootAnalysis/macros/trigeff/trigg_individual/Trigger_efficiency_L1seed.pdf
+Bmm/RootAnalysis/macros/trigeff/x509up_u56005
+Bmm/RootAnalysis/macros/trigeff/trigeff
+Bmm/RootAnalysis/macros/trigeff/logs/
+Bmm/RootAnalysis/macros/trigeff/mergetrig.cc~
+Bmm/RootAnalysis/macros/trigeff/triggerefficiency.cc~
+Bmm/RootAnalysis/macros/trigeff/docker_stderror
+Bmm/RootAnalysis/macros/prodDigiReco_2017.sh~
+Bmm/RootAnalysis/macros/presentation.out
+Bmm/RootAnalysis/macros/presentation.dvi
+Bmm/RootAnalysis/macros/presentation.nav
+Bmm/RootAnalysis/macros/presentation.toc
+Bmm/RootAnalysis/macros/presentation.snm
+Bmm/RootAnalysis/macros/fitPsYield.cc~
+Bmm/RootAnalysis/macros/Makefile~
+Bmm/RootAnalysis/macros/runPlot.cc~
+Bmm/RootAnalysis/macros/treeReader01.cc~
+Bmm/RootAnalysis/macros/plotFakenew.cc~
+Bmm/RootAnalysis/macros/FAKERATE/
+Bmm/RootAnalysis/macros/FAKERATE/file_2018A.txt
+Bmm/RootAnalysis/macros/FAKERATE/Makefile
+Bmm/RootAnalysis/macros/FAKERATE/run.sh
+Bmm/RootAnalysis/macros/FAKERATE/sampleskimming_C_ACLiC_dict_rdict.pcm
+Bmm/RootAnalysis/macros/FAKERATE/sampleskimming_C.d
+Bmm/RootAnalysis/macros/FAKERATE/sampleskimming_C.so
+Bmm/RootAnalysis/macros/FAKERATE/plot/
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.009000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.007000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.006000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.005000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.004000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_docatrkcut_0.002000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_10.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_12.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_15.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_17.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_20.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_flscut_25.000000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.990000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.994000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.996000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.998000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.999000.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_cosalphacut_0.999500.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_Lpt_2_cos999.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-roofit_Test_Lpt_2_cos999.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Test_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-roofit_Test_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-roofit_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_signal_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_sideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-root_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_all_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_loSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_hiSideband_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_doca_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_cosAlphaXY_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_lxy_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_slxy_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_vtx_chi2dof_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_vtx_prob_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk1_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_trk2_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_mass_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-mass-roofit_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playKs-ks_kin_pt_sbs_Data_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_doca_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_cosAlphaXY_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_lxy_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_slxy_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_vtx_chi2dof_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_vtx_prob_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_eta_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_pt_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_phi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mass_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_doca_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_cosAlphaXY_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_lxy_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_slxy_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_vtx_chi2dof_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_vtx_prob_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_eta_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_pt_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_phi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm-mass-MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mass_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_doca_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_cosAlphaXY_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_lxy_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_slxy_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_vtx_chi2dof_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_vtx_prob_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_eta_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_pt_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_phi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mass_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_doca_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_cosAlphaXY_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_lxy_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_slxy_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_vtx_chi2dof_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_vtx_prob_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_eta_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_pt_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_phi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mass_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_doca_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_cosAlphaXY_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_lxy_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_slxy_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_vtx_chi2dof_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_vtx_prob_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk1_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_eta_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_pt_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_trk2_phi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mass_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_mu1mu2_dphi_All_%s.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_pt_sbs_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_deltaphi_signal_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_deltaphi_sideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_deltaphi_all_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_deltaphi_loSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plot/playMm-mm_kin_deltaphi_hiSideband_MC_dphi.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plotFakenew.cc
+Bmm/RootAnalysis/macros/FAKERATE/test.cc
+Bmm/RootAnalysis/macros/FAKERATE/plotFakenew.cc~
+Bmm/RootAnalysis/macros/FAKERATE/test.cc~
+Bmm/RootAnalysis/macros/FAKERATE/oflline
+Bmm/RootAnalysis/macros/FAKERATE/dataMC_comaprison.pdf
+Bmm/RootAnalysis/macros/FAKERATE/plotFake
+Bmm/RootAnalysis/macros/plotResultsnew.2017.tex
+Bmm/RootAnalysis/macros/plotResultsnew.2018.tex
+Bmm/RootAnalysis/macros/#filtereff_2017.cc#
+Bmm/RootAnalysis/macros/w_trigger_Jpsi_2018.root
+Bmm/RootAnalysis/macros/plotResults.2018.files~
+Bmm/RootAnalysis/macros/plotResultsnew_working_for20172018_beforeimplementationofefficicneycorrection.cc
+Bmm/RootAnalysis/macros/w_trigger_Jpsi_2017.root
+Bmm/RootAnalysis/macros/triggerefficiency.cc
+Bmm/RootAnalysis/macros/tmp/
+Bmm/RootAnalysis/macros/w_trigger_Jpsi_2017_old.root
+Bmm/RootAnalysis/macros/triggerefficiency.cc~
+Bmm/RootAnalysis/macros/2017_BuJpsiKp_trigg.root
+Bmm/RootAnalysis/macros/prodDigiReco_trigeff_2017.sh
+Bmm/RootAnalysis/rootio/
+Bmm/RootAnalysis/rootio/Makefile
+Bmm/RootAnalysis/rootio/TAna00Event.cc
+Bmm/RootAnalysis/rootio/TAna00Event.hh
+Bmm/RootAnalysis/rootio/TAna01Event.cc
+Bmm/RootAnalysis/rootio/TAna01Event.hh
+Bmm/RootAnalysis/rootio/TAnaCand.cc
+Bmm/RootAnalysis/rootio/TAnaCand.hh
+Bmm/RootAnalysis/rootio/TAnaCandLinkDef.h
+Bmm/RootAnalysis/rootio/TAnaJet.cc
+Bmm/RootAnalysis/rootio/TAnaJet.hh
+Bmm/RootAnalysis/rootio/TAnaMuon.cc
+Bmm/RootAnalysis/rootio/TAnaMuon.hh
+Bmm/RootAnalysis/rootio/TAnaMuonLinkDef.h
+Bmm/RootAnalysis/rootio/TAnaTrack.cc
+Bmm/RootAnalysis/rootio/TAnaTrack.hh
+Bmm/RootAnalysis/rootio/TAnaVertex.cc
+Bmm/RootAnalysis/rootio/TAnaVertex.hh
+Bmm/RootAnalysis/rootio/TGenCand.cc
+Bmm/RootAnalysis/rootio/TGenCand.hh
+Bmm/RootAnalysis/rootio/TSimpleTrack.cc
+Bmm/RootAnalysis/rootio/TSimpleTrack.hh
+Bmm/RootAnalysis/rootio/TTrgObj.cc
+Bmm/RootAnalysis/rootio/TTrgObj.hh
+Bmm/RootAnalysis/rootio/TTrgObjv2.cc
+Bmm/RootAnalysis/rootio/TTrgObjv2.hh
+Bmm/RootAnalysis/rootio/obj/
+Bmm/RootAnalysis/rootio/obj/TAna01Event.o
+Bmm/RootAnalysis/rootio/obj/TGenCand.o
+Bmm/RootAnalysis/rootio/obj/TAnaTrack.o
+Bmm/RootAnalysis/rootio/obj/TSimpleTrack.o
+Bmm/RootAnalysis/rootio/obj/TAnaMuon.o
+Bmm/RootAnalysis/rootio/obj/TTrgObj.o
+Bmm/RootAnalysis/rootio/obj/TTrgObjv2.o
+Bmm/RootAnalysis/rootio/obj/TAnaCand.o
+Bmm/RootAnalysis/rootio/obj/TAnaVertex.o
+Bmm/RootAnalysis/rootio/obj/TAnaJet.o
+Bmm/RootAnalysis/rootio/obj/TAna01EventDict.o
+Bmm/RootAnalysis/rootio/obj/TGenCandDict.o
+Bmm/RootAnalysis/rootio/obj/TAnaTrackDict.o
+Bmm/RootAnalysis/rootio/obj/TSimpleTrackDict.o
+Bmm/RootAnalysis/rootio/obj/TAnaMuonDict.o
+Bmm/RootAnalysis/rootio/obj/TTrgObjDict.o
+Bmm/RootAnalysis/rootio/obj/TTrgObjv2Dict.o
+Bmm/RootAnalysis/rootio/obj/TAnaCandDict.o
+Bmm/RootAnalysis/rootio/obj/TAnaVertexDict.o
+Bmm/RootAnalysis/rootio/obj/TAnaJetDict.o
+Bmm/RootAnalysis/rootio/bin/
+Bmm/RootAnalysis/rootio/lib/
+Bmm/RootAnalysis/rootio/lib/TSimpleTrackDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TGenCandDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAna01EventDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TTrgObjDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAnaTrackDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TTrgObjv2Dict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAnaMuonDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAnaCandDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAnaVertexDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/TAnaJetDict_rdict.pcm
+Bmm/RootAnalysis/rootio/lib/libAna00.so
+Bmm/RootAnalysis/rootio/k
+Bmm/perl/
+Bmm/perl/allSplitCheckedChains
+Bmm/perl/checkJobs
+Bmm/perl/cleanProductionArea
+Bmm/perl/collectCrabRootfiles
+Bmm/perl/countCatalog
+Bmm/perl/countEvents
+Bmm/perl/dirSetup
+Bmm/perl/emptyfiles
+Bmm/perl/fillCustomInfoInputFile
+Bmm/perl/filterEff
+Bmm/perl/l1tkeys
+Bmm/perl/mkCheckedChain
+Bmm/perl/mkDir
+Bmm/perl/mkProdPyFiles
+Bmm/perl/mkPyFiles
+Bmm/perl/mkTarFile
+Bmm/perl/modules/
+Bmm/perl/modules/Tie-IxHash-1.23/
+Bmm/perl/modules/Tie-IxHash-1.23/Build.PL
+Bmm/perl/modules/Tie-IxHash-1.23/Changes
+Bmm/perl/modules/Tie-IxHash-1.23/MANIFEST
+Bmm/perl/modules/Tie-IxHash-1.23/META.json
+Bmm/perl/modules/Tie-IxHash-1.23/META.yml
+Bmm/perl/modules/Tie-IxHash-1.23/Makefile
+Bmm/perl/modules/Tie-IxHash-1.23/Makefile.PL
+Bmm/perl/modules/Tie-IxHash-1.23/README
+Bmm/perl/modules/Tie-IxHash-1.23/blib/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/.exists
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/auto/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/auto/Tie/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/auto/Tie/IxHash/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/arch/auto/Tie/IxHash/.exists
+Bmm/perl/modules/Tie-IxHash-1.23/blib/man1/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/man1/.exists
+Bmm/perl/modules/Tie-IxHash-1.23/blib/man3/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/man3/.exists
+Bmm/perl/modules/Tie-IxHash-1.23/blib/man3/Tie::IxHash.3pm
+Bmm/perl/modules/Tie-IxHash-1.23/blib/script/
+Bmm/perl/modules/Tie-IxHash-1.23/blib/script/.exists
+Bmm/perl/modules/Tie-IxHash-1.23/lib/
+Bmm/perl/modules/Tie-IxHash-1.23/lib/Tie/
+Bmm/perl/modules/Tie-IxHash-1.23/lib/Tie/IxHash.pm
+Bmm/perl/modules/Tie-IxHash-1.23/pm_to_blib
+Bmm/perl/modules/Tie-IxHash-1.23/t/
+Bmm/perl/modules/Tie-IxHash-1.23/t/each-delete.t
+Bmm/perl/modules/Tie-IxHash-1.23/t/ixhash.t
+Bmm/perl/modules/Tie-IxHash-1.23/t/pod.t
+Bmm/perl/monGrid
+Bmm/perl/monSge
+Bmm/perl/patch53
+Bmm/perl/patchDasFile
+Bmm/perl/patchPyFiles
+Bmm/perl/pdTriggers
+Bmm/perl/purgeTrainings
+Bmm/perl/replicate
+Bmm/perl/run
+Bmm/perl/runAll
+Bmm/perl/runCont
+Bmm/perl/runPlots
+Bmm/perl/seFiles
+Bmm/perl/sge
+Bmm/perl/sortTrainings
+Bmm/perl/splitCheckedChain
+Bmm/perl/srmFind
+Bmm/perl/srmHadd
+Bmm/perl/srmLs
+Bmm/perl/xFiles
+Bmm/perl/xrdcpFiles
+total 4
+drwxr-xr-x 5 ckar fnalgrid 4096 Apr 16  2020 Bmm
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm
+mkdir -p obj bin lib
+mkdir -p ../../../../lib/slc7_amd64_gcc700
+mkdir -p ../../../../lib/slc7_amd64_gcc700
+cd ../../../../lib/slc7_amd64_gcc700/ && rm -f libUtil.so  && ln -s ../../src/Bmm/RootAnalysis/common/lib/libUtil.so && cd -
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/common
+mkdir -p obj bin lib
+mkdir -p ../../../../lib/slc7_amd64_gcc700
+mkdir -p ../../../../lib/slc7_amd64_gcc700
+cd ../../../../lib/slc7_amd64_gcc700/ && rm -f libAna00.so && ln -s ../../src/Bmm/RootAnalysis/rootio/lib/libAna00.so && cd -
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/rootio
+mkdir -p obj bin lib
+cd lib && ln -f -s ../../rootio/lib/libAna00.so && cd -
+/cvmfs/cms.cern.ch/slc7_amd64_gcc700/external/gcc/7.0.0-pafccj/bin/c++ -g -o bin/runPlot -L/cvmfs/cms.cern.ch/slc7_amd64_gcc700/lcg/root/6.14.09-pafccj3/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTDataFrame -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -pthread -lm -ldl -rdynamic -lTMVA -lTMVAGui -lRooFitCore -lRooFit obj/runPlot.o lib/libAnaClasses.so lib/libAna00.so lib/libUtil.so
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/macros
+cd lib && /bin/ls -1 ../../rootio/lib/*.pcm | perl -ne 'use File::Basename; chop; symlink($_, basename($_))' && cd -
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/macros
+cd lib && ln -f -s ../../common/lib/libUtil.so && cd -
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/macros
+cd lib && /bin/ls -1 ../../common/lib/*.pcm | perl -ne 'use File::Basename; chop; symlink($_, basename($_))' && cd -
+/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8/src/Bmm/RootAnalysis/macros
+total 12
+-rw-r--r-- 1 ckar fnalgrid   92 Apr 16  2020 README.md
+drwxr-xr-x 6 ckar fnalgrid 4096 Apr 16  2020 RootAnalysis
+drwxr-xr-x 3 ckar fnalgrid 4096 Apr 16  2020 perl
+Done: ProjectRename
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Entering Package Bmm/perl
+>> Leaving Package Bmm/perl
+>> Package Bmm/perl built
+>> Entering Package Bmm/RootAnalysis
+>> Leaving Package Bmm/RootAnalysis
+>> Package Bmm/RootAnalysis built
+>> Subsystem Bmm built
+gmake[1]: Entering directory '/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8'
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Creating project symlinks
+>> Done python_symlink
+>> Compiling python modules python
+>> All python modules compiled
+>> Plugins of all types refreshed.
+>> Done generating edm plugin poisoned information
+gmake[1]: Leaving directory '/storage/local/data1/condor/execute/dir_13612/CMSSW_10_6_8'
+start time: 2021-02-10 08:50:55.946009000+0000
+syear: 2017 year: 2017 setup: 2017 dir: 2017 cuts: baseCuts.2017.cuts
+--> Added cut fGoodAcceptance  acceptance
+--> Added cut fGoodJpsiCuts  J/psi
+--> Added cut fGoodHLT  HLT
+--> Added cut fGoodPvAveW8  <w8>
+--> Added cut fGoodDcand  Dcand
+--> Added cut fGoodMuonsPt  p_{T,#mu} [GeV]
+--> Added cut fGoodMuonsEta  #eta_{#mu} 
+--> Added cut fGoodGlobalMuons  lepton ID
+--> Added cut fGoodGlobalMuonsKin  lepton ID kin
+--> Added cut fGoodMuonsID  lepton ID
+--> Added cut fGoodTracks  good tracks
+--> Added cut fGoodTracksPt  p_{T,trk} [GeV]
+--> Added cut fGoodTracksEta  #eta_{trk} 
+--> Added cut fGoodQ  q_{1} q_{2}
+--> Added cut fGoodPt  p_{T,B}
+--> Added cut fGoodPhi  #phi_{B}
+--> Added cut fGoodEta  #eta_{B}
+--> Added cut fGoodChi2  #chi^{2}
+--> Added cut fGoodMaxDoca  MAXDOCA
+--> Added cut fGoodAlpha  #alpha
+--> Added cut fGoodFLS  l/#sigma(l)
+--> Added cut fGoodIp  IP
+--> Added cut fGoodIpS  IPS
+--> Added cut fGoodLip  LIP
+--> Added cut fGoodLipS  LIPS
+--> Added cut fGoodDocaTrk  d_{ca}(trk)
+--> Added cut fGoodIso  I_{trk}
+--> Added cut fGoodM1Iso  I_{trk}^{#mu,1}
+--> Added cut fGoodM2Iso  I_{trk}^{#mu,2}
+--> Added cut fGoodCloseTrack  close track veto
+--> Added cut fGoodAcceptance  acceptance
+--> Added cut fGoodJpsiCuts  J/psi
+--> Added cut fGoodHLT  HLT
+--> Added cut fGoodPvAveW8  <w8>
+--> Added cut fGoodDcand  Dcand
+--> Added cut fGoodMuonsPt  p_{T,#mu} [GeV]
+--> Added cut fGoodMuonsEta  #eta_{#mu} 
+--> Added cut fGoodGlobalMuons  lepton ID
+--> Added cut fGoodGlobalMuonsKin  lepton ID kin
+--> Added cut fGoodMuonsID  lepton ID
+--> Added cut fGoodTracks  good tracks
+--> Added cut fGoodTracksPt  p_{T,trk} [GeV]
+--> Added cut fGoodTracksEta  #eta_{trk} 
+--> Added cut fGoodQ  q_{1} q_{2}
+--> Added cut fGoodPt  p_{T,B} [GeV]
+--> Added cut fGoodPhi  #phi_{B} 
+--> Added cut fGoodEta  #eta_{B} 
+--> Added cut fGoodBdtPresel  BDTPresel
+--> Added cut fGoodBDT  bdt
+==> Reading cuts from baseCuts.2017.cuts
+==> plotClassnew: Reading 2017/baseCuts.2017.cuts for cut settings
+    readFile 2017/baseCuts.2017.cuts
+creating 2 analysis channels
+call setupReader(weights/TMVA-100-Events0_BDT.weights.xml) for chan 0
+setupReader, open file weights/TMVA-100-Events0_BDT.weights.xml  ->  booked reader 0x10cae60
+call setupReader(weights/TMVA-100-Events1_BDT.weights.xml) for chan 0
+setupReader, open file weights/TMVA-100-Events1_BDT.weights.xml  ->  booked reader 0x10daca0
+call setupReader(weights/TMVA-100-Events2_BDT.weights.xml) for chan 0
+setupReader, open file weights/TMVA-100-Events2_BDT.weights.xml  ->  booked reader 0x10dbcb0
+call setupReader(weights/TMVA-100-Events0_BDT.weights.xml) for chan 1
+setupReader, open file weights/TMVA-100-Events0_BDT.weights.xml  ->  booked reader 0x10dced0
+call setupReader(weights/TMVA-100-Events1_BDT.weights.xml) for chan 1
+setupReader, open file weights/TMVA-100-Events1_BDT.weights.xml  ->  booked reader 0x10e22d0
+call setupReader(weights/TMVA-100-Events2_BDT.weights.xml) for chan 1
+setupReader, open file weights/TMVA-100-Events2_BDT.weights.xml  ->  booked reader 0x10e1110
+Preselection: 
+ (5.00<pt)&&(pt<9999.00) && (4.00<m1pt)&&(m1pt<999.00) && (4.00<m2pt)&&(m2pt<999.00) && (flsxy>4.00) && (fl3d<2.00) && (pvip<0.02) && !(TMath::IsNaN(pvips)) && (pvips>0) && (pvips<4.00) && TMath::Abs(pvlip) < 1.00 && TMath::Abs(pvlips) < 5.00 && (closetrk<21) && (fls3d>4.00) && (fls3d<200.00) && (docatrk<2.50) && (maxdoca<0.08) && (chi2dof<5.00)  && (alpha<0.20) && (me<0.20) && (iso>0.00) && (m1iso>0.00) && (m2iso>0.00) && (m1q*m2q<0)
+==> finished reading cut setting, fCuts.size() =  2
+==> plotClassnew::loadFiles loading files listed in 2017/plotResults.2017.files
+Bf in plotclassnew 0
+    plotClassnew::loadFiles loaded 29 datasets
+==> plotResultsnew::loadFile loading files listed in 2017/plotResults.2017.files
+----------------------------------------------------------------------------------------------------------------------------------------
+           Dataset name:                                                               Filename           LaTeX      Lumi      Eff       BF
+----------------------------------------------------------------------------------------------------------------------------------------
+missing bdkpiMcCombAccBg
+run: This is the end, my friend

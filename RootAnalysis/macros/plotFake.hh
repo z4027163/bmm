@@ -1,10 +1,10 @@
 #ifndef PLOTFAKE_h
 #define PLOTFAKE_h
 
-#include "plotClass.hh"
+#include "plotClassnew.hh"
 #include "common/AnalysisDistribution.hh"
 #include "common/dataset.hh"
-#include "redTreeData.hh"
+#include "redTreeDatanew.hh"
 
 struct adsetFake {
   AnalysisDistribution
@@ -72,7 +72,7 @@ struct adsetFake {
 };
 
 // ----------------------------------------------------------------------
-class plotFake: public plotClass {
+class plotFake: public plotClassnew {
 
 public :
   plotFake(std::string dir = "results",
@@ -126,7 +126,7 @@ private:
 
   TTree* fTree;
 
-  struct redTreeData fb;
+  struct redTreeDatanew fb;
 
   std::map<string, adsetFake*> fAdMap;
 

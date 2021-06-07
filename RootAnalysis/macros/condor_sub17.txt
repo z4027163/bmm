@@ -1,0 +1,20 @@
+
+universe              = vanilla
+Executable            = prodDigiReco_2017.sh
+
+Should_Transfer_Files = YES
+
+WhenToTransferOutput = ON_EXIT
+Transfer_Input_Files  = ../../../Bmm.tar.gz
+
+error                 = logs/job_2017_$(Cluster)_$(Process).stderr
+Output                = logs/job_2017_$(Cluster)_$(Process).stdout
+Log                   = logs/job_2017_$(Cluster)_$(Process).log
+x509userproxy         = x509up_u56005
+
++maxWallTime          = 2880
+RequestMemory         = 8000
+RequestDisk           = 15000
+
+Queue
+

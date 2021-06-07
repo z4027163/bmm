@@ -1,0 +1,209 @@
+./condor_exec.exe: line 14: limit: command not found
+which: no root in (/cvmfs/cms.cern.ch/common:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAna01Event.hh
+   requested to autoload type TAna01Event
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TGenCand.hh
+   requested to autoload type TGenCand
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaTrack.hh
+   requested to autoload type TAnaTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TSimpleTrack.hh
+   requested to autoload type TSimpleTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaMuon.hh
+   requested to autoload type xpTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaMuon.hh
+   requested to autoload type TAnaMuon
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TTrgObj.hh
+   requested to autoload type TTrgObj
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TTrgObjv2.hh
+   requested to autoload type TTrgObjv2
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaCand.hh
+   requested to autoload type TAnaCand
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaVertex.hh
+   requested to autoload type TAnaVertex
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaJet.hh
+   requested to autoload type TAnaJet
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for AnalysisCuts.hh
+   requested to autoload type AnalysisCuts
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for AnalysisDistribution.hh
+   requested to autoload type AnalysisDistribution
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PidTable.hh
+   requested to autoload type PidTable
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PidData.hh
+   requested to autoload type PidData
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for HistCutEfficiency.hh
+   requested to autoload type HistCutEfficiency
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for selpoint.hh
+   requested to autoload type selpoint
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for dataset.hh
+   requested to autoload type dataset
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for initFunc.hh
+   requested to autoload type initFunc
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for JSON.hh
+   requested to autoload type JSON
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PdTrigger.hh
+   requested to autoload type PdTrigger
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for Lumi.hh
+   requested to autoload type Lumi
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for fitPsYield.hh
+   requested to autoload type fitPsYield
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for treeReader01.hh
+   requested to autoload type treeReader01
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for genAnalysis.hh
+   requested to autoload type genAnalysis
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for plotClassnew.hh
+   requested to autoload type plotClassnew
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for plotResultsnew.hh
+   requested to autoload type plotResultsnew
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for anaNumbers.hh
+   requested to autoload type anaNumbers
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi_err
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi_err
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi
+Error in <TTree::SetBranchAddress>: unknown branch -> w_trigJpsi_err
+Error in <TTree::SetBranchAddress>: unknown branch -> w_sl3d
+Error in <TTree::SetBranchAddress>: unknown branch -> w_PU
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan0.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Warning in <Fit>: Abnormal termination of minimization.
+Info in <TCanvas::Print>: pdf file 2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-combBg-mode0-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-combBg-AM-mode0-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-sl-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-hh-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-bg-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-data-background-chan0.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-data-scaled-background-chan0.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_notabenefit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_notabene2fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/norm_fit0_hNorm_bdt2018_bupsikData_1D_chan1.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan1.pdf has been created
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood is not accurate, the errors may be not reliable
+Warning in <ROOT::Math::Fitter::ApplyWeightCorrection>: Covariance matrix for weighted likelihood was forced to be defined positive
+Info in <TCanvas::Print>: pdf file 2018/norm_fit1_hNorm_bdt2018_bspsiphiData_1D_chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-combBg-mode0-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-combBg-AM-mode0-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-sl-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-hh-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-rare-bg-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-data-background-chan1.pdf has been created
+Info in <TCanvas::Print>: pdf file 2018/bdt2018-data-scaled-background-chan1.pdf has been created
+
+ *** Break *** segmentation violation
+./condor_exec.exe: line 58:   740 Segmentation fault      (core dumped) bin/runPlot -y 2018 -s 2018 -d 2018 -c baseCuts.2018.cuts -f plotResults.2018.files -p results -m bdtopt
+[14.29kB/14.29kB][100%][==================================================][14.29kB/s]  [14.29kB/14.29kB][100%][==================================================][14.29kB/s]  
+[17.03kB/17.03kB][100%][==================================================][17.03kB/s]  [17.03kB/17.03kB][100%][==================================================][17.03kB/s]  
+[19.47kB/19.47kB][100%][==================================================][19.47kB/s]  [19.47kB/19.47kB][100%][==================================================][19.47kB/s]  
+[19.63kB/19.63kB][100%][==================================================][19.63kB/s]  [19.63kB/19.63kB][100%][==================================================][19.63kB/s]  
+[19.86kB/19.86kB][100%][==================================================][19.86kB/s]  [19.86kB/19.86kB][100%][==================================================][19.86kB/s]  
+[20.49kB/20.49kB][100%][==================================================][20.49kB/s]  [20.49kB/20.49kB][100%][==================================================][20.49kB/s]  
+[19.86kB/19.86kB][100%][==================================================][19.86kB/s]  [19.86kB/19.86kB][100%][==================================================][19.86kB/s]  
+[19.86kB/19.86kB][100%][==================================================][19.86kB/s]  [19.86kB/19.86kB][100%][==================================================][19.86kB/s]  
+[25.06kB/25.06kB][100%][==================================================][25.06kB/s]  [25.06kB/25.06kB][100%][==================================================][25.06kB/s]  
+[15.75kB/15.75kB][100%][==================================================][15.75kB/s]  [15.75kB/15.75kB][100%][==================================================][15.75kB/s]  
+[15.06kB/15.06kB][100%][==================================================][15.06kB/s]  [15.06kB/15.06kB][100%][==================================================][15.06kB/s]  
+[21.59kB/21.59kB][100%][==================================================][21.59kB/s]  [21.59kB/21.59kB][100%][==================================================][21.59kB/s]  
+[22.6kB/22.6kB][100%][==================================================][22.6kB/s]  [22.6kB/22.6kB][100%][==================================================][22.6kB/s]  
+[23.11kB/23.11kB][100%][==================================================][23.11kB/s]  [23.11kB/23.11kB][100%][==================================================][23.11kB/s]  
+[69.99kB/69.99kB][100%][==================================================][69.99kB/s]  [69.99kB/69.99kB][100%][==================================================][69.99kB/s]  
+[53.3kB/53.3kB][100%][==================================================][53.3kB/s]  [53.3kB/53.3kB][100%][==================================================][53.3kB/s]  
+[39.45kB/39.45kB][100%][==================================================][39.45kB/s]  [39.45kB/39.45kB][100%][==================================================][39.45kB/s]  
+[45.35kB/45.35kB][100%][==================================================][45.35kB/s]  [45.35kB/45.35kB][100%][==================================================][45.35kB/s]  
+[32.46kB/32.46kB][100%][==================================================][32.46kB/s]  [32.46kB/32.46kB][100%][==================================================][32.46kB/s]  
+[25kB/25kB][100%][==================================================][25kB/s]  [25kB/25kB][100%][==================================================][25kB/s]  
+[32kB/32kB][100%][==================================================][32kB/s]  [32kB/32kB][100%][==================================================][32kB/s]  
+[24.7kB/24.7kB][100%][==================================================][24.7kB/s]  [24.7kB/24.7kB][100%][==================================================][24.7kB/s]  
+[16MB/120.3MB][ 13%][======>                                           ][16MB/s]  [112MB/120.3MB][ 93%][==============================================>   ][56MB/s]  [120.3MB/120.3MB][100%][==================================================][60.17MB/s]  [120.3MB/120.3MB][100%][==================================================][40.11MB/s]  
+[287.2kB/287.2kB][100%][==================================================][287.2kB/s]  [287.2kB/287.2kB][100%][==================================================][287.2kB/s]  
+[447B/447B][100%][==================================================][447B/s]  [447B/447B][100%][==================================================][447B/s]  
+[38.45kB/38.45kB][100%][==================================================][38.45kB/s]  [38.45kB/38.45kB][100%][==================================================][38.45kB/s]  

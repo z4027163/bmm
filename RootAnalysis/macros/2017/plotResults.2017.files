@@ -1,0 +1,55 @@
+#/eos/home-c/ckar/Bmm5_code/nanoaodsample/505_14April/
+#/eos/uscms/store/user/ckar/Bmm5_508/
+#root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5_508/
+#root://cmsxrootd.fnal.gov/store/user/ckar/Bmm5_508/
+#root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged/
+#Merged_510
+# -- B+
+type=bupsik,data         lumi=42.9          file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BuToJpsiK_Data2017_nano_v3.root
+type=bupsik,acc,mcComb   bf=(6.02,0.17)e-5  eff=(0.674,0.00336) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BuToJpsiK_MC2017_nano_v3.root
+type=bupsik,mcComb       bf=(6.02,0.17)e-5  eff=(0.021,0.00046) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BuToJpsiK_BMuonFilter_MC2017_nano_v3.root
+#----- Bs
+type=bmm,data          lumi=42.9          file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToMuMu_Data2017_nano_v3.root
+type=bdmm,acc,mcComb   bf=(1.06,0.09)e-10 eff=(0.676,0.00336)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToMuMu_MC2017_nano_v3.root
+type=bdmm,mcComb       bf=(1.06,0.09)e-10 eff=(0.0575,0.00078) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToMuMu_BMuonFilter_MC2017_nano_v3.root
+type=bsmm,acc,mcComb   bf=(3.65,0.23)e-9  eff=(0.178,0.0014)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToMuMu_MC2017_nano_v3.root
+type=bsmm,mcComb       bf=(3.65,0.23)e-9  eff=(0.016,0.000398) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToMuMu_BMuonFilter_MC2017_nano_v3.root
+# -- Bs
+type=bspsiphi,data         lumi=42.9          file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToJpsiPhi_Data2017_nano_v3.root
+type=bspsiphi,acc,mcComb   bf=(3.17,0.24)e-5  eff=(0.173,0.00142)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToJpsiPhi_MC2017_nano_v3.root
+type=bspsiphi,mcComb       bf=(3.17,0.24)e-5  eff=(0.0049,0.00022) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToJpsiPhi_BMuonFilter_MC2017_nano_v3.root
+
+# -- Bs backgrounds
+type=bskk,mcComb,bg        bf=(2.54,0.17)e-5  eff=(0.0157,0.000399)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToKK_BMuonFilter_MC2017_nano_v3.root
+type=bskk,acc,mcComb,bg    bf=(2.54,0.17)e-5  eff=(0.181,0.00146)     file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToKK_MC2017_nano_v3.root
+type=bskpi,mcComb,bg       bf=(5.6,0.6)e-6    eff=(0.0153,0.000394)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToKPi_BMuonFilter_MC2017_nano_v3.root
+type=bspipi,mcComb,bg      bf=(6.8,0.8)e-7    eff=(0.0145,0.000383)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToPiPi_BMuonFilter_MC2017_nano_v3.root
+type=bskmunu,mcComb,bg,acc bf=(1.06,0.06)e-4  eff=(0.177,0.00144)     file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToKMuNu_MC2017_nano_v3.root
+type=bskmunu,mcComb,bg     bf=(1.06,0.06)e-4  eff=(0.00714,0.000268)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BsToKMuNu_BMuonFilter_MC2017_nano_v3.root
+
+# -- Bd backgrounds
+
+type=bdkpi,mcComb,bg         bf=(1.96,0.05)e-5  eff=(0.0544,0.00076)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToKPi_BMuonFilter_MC2017_nano_v3.root
+type=bdkpi,acc,mcComb,bg     bf=(1.96,0.05)e-5  eff=(0.676,0.00336)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToKPi_MC2017_nano_v3.root
+#type=bdkk,mcComb,bg          bf=(7.80,1.50)e-8    eff=(0.0556,0.00076)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToKK_BMuonFilter_MC2017_nano_v3.root
+type=bdpipi,mcComb,bg        bf=(5.12,0.19)e-6  eff=(0.0536,0.000751) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToPiPi_BMuonFilter_MC2017_nano_v3.root
+ 
+type=bdpimunu,mcComb,bg,acc  bf=(1.50,0.06)e-4  eff=(0.682,0.00338)  file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToPiMuNu_MC2017_nano_v3.root
+type=bdpimunu,mcComb,bg      bf=(1.50,0.06)e-4  eff=(0.0238,0.00049) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToPiMuNu_BMuonFilter_MC2017_nano_v3.root
+
+# BF not known, taking PDG 2016 UL for B0 -> pi0 l+ l-
+#type=bdpimumu,mcComb,bg,acc  bf=(5.30,0.53)e-8  eff=(0.65,0.0032749) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToMuMuPi_MC2017_nano_v3.root
+#type=bdpimumu,mcComb,bg      bf=(5.30,0.53)e-8  eff=(0.0288,0.00054) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BdToMuMuPi_BMuonFilter_MC2017_nano_v3.root
+# -- Bu backgrounds
+type=bupimumu,mcComb,bg,acc  bf=(1.79,0.23)e-8  eff=(0.664,0.0033)   file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BuToMuMuPi_MC2017_nano_v3.root
+type=bupimumu,mcComb,bg      bf=(1.79,0.23)e-8  eff=(0.0295,0.00055) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_BuToMuMuPi_BMuonFilter_MC2017_nano_v3.root
+# -- Lb backgrounds
+type=lbppi,mcComb,bg         bf=(4.3,0.8)e-6    eff=(0.0059,0.000243) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_LambdaBToPPi_BMuonFilter_MC2017_nano_v3.root
+type=lbpk,mcComb,bg,acc      bf=(5.1,0.9)e-6    eff=(0.0755,0.000901) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_LambdaBToPK_MC2017_nano_v3.root
+type=lbpk,mcComb,bg          bf=(5.1,0.9)e-6    eff=(0.00594,0.00024) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_LambdaBToPK_BMuonFilter_MC2017_nano_v3.root
+type=lbpmunu,acc,mcComb,bg   bf=(4.10,1.0)e-4   eff=(0.0725,0.000881) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_LambdaBToPMuNu_MC2017_nano_v3.root
+type=lbpmunu,mcComb,bg       bf=(4.10,1.0)e-4   eff=(0.0027,0.000166) file=root://cmseos.fnal.gov//eos/uscms/store/user/ckar/Bmm5/NanoAOD/Merged_510/bmm-reduced_LambdaBToPMuNu_BMuonFilter_MC2017_nano_v3.root
+
+# # -- other backgrounds
+# type=bcpsimunu,mcComb,bg     bf=(4.10,1.0)e-4   eff=(3.00,0.39)e-5 file=scratch/bmm-mc-Summer16_private-BcToJpsiMuNu-v06.root
+# type=bupsipi,mc,Run1         bf=(1.00,0.0)e-9   eff=(4.26,0.15)e-4 file=/scratch/ursl/bmm3/v16-2012-cms-BuToJpsiPi.root

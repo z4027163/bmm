@@ -1,0 +1,303 @@
+./condor_exec.exe: line 17: limit: command not found
+which: no root in (/cvmfs/cms.cern.ch/common:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAna01Event.hh
+   requested to autoload type TAna01Event
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TGenCand.hh
+   requested to autoload type TGenCand
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaTrack.hh
+   requested to autoload type TAnaTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TSimpleTrack.hh
+   requested to autoload type TSimpleTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaMuon.hh
+   requested to autoload type xpTrack
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaMuon.hh
+   requested to autoload type TAnaMuon
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TTrgObj.hh
+   requested to autoload type TTrgObj
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TTrgObjv2.hh
+   requested to autoload type TTrgObjv2
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaCand.hh
+   requested to autoload type TAnaCand
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaVertex.hh
+   requested to autoload type TAnaVertex
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for TAnaJet.hh
+   requested to autoload type TAnaJet
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for AnalysisCuts.hh
+   requested to autoload type AnalysisCuts
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for AnalysisDistribution.hh
+   requested to autoload type AnalysisDistribution
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PidTable.hh
+   requested to autoload type PidTable
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PidData.hh
+   requested to autoload type PidData
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for HistCutEfficiency.hh
+   requested to autoload type HistCutEfficiency
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for selpoint.hh
+   requested to autoload type selpoint
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for dataset.hh
+   requested to autoload type dataset
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for initFunc.hh
+   requested to autoload type initFunc
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for JSON.hh
+   requested to autoload type JSON
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for PdTrigger.hh
+   requested to autoload type PdTrigger
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for Lumi.hh
+   requested to autoload type Lumi
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for fitPsYield.hh
+   requested to autoload type fitPsYield
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for treeReader01.hh
+   requested to autoload type treeReader01
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for genAnalysis.hh
+   requested to autoload type genAnalysis
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for plotClassnew.hh
+   requested to autoload type plotClassnew
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for plotResultsnew.hh
+   requested to autoload type plotResultsnew
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for anaNumbers.hh
+   requested to autoload type anaNumbers
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for plotFake.hh
+   requested to autoload type plotFake
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToJpsiK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToJpsiK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToMuMu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToMuMu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToMuMu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToMuMu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToJpsiPhi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToJpsiPhi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToPiPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToKPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToKPi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToMuMuPi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToMuMuPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToJpsiK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToJpsiK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToMuMu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToMuMu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToMuMu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToMuMu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToJpsiPhi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToJpsiPhi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToPiPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BsToKMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToKPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToKPi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BdToPiMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToMuMuPi_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_BuToMuMuPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPPi_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPK_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPK_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPMuNu_MC2017_nano_v3.root; No such file or directory
+
+Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] Unable to open file /eos/uscms/store/user/ckar/Bmm5/NanoAOD/bmm-reduced_LambdaBToPMuNu_BMuonFilter_MC2017_nano_v3.root; No such file or directory
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 6 (Thread 0x7fa4dd7eb700 (LWP 782)):
+#0  0x00007fa4ee94fbf9 in syscall () from /lib64/libc.so.6
+#1  0x00007fa4dfad92ee in XrdSys::LinuxSemaphore::Wait (this=0x2f04770) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2ef4c88) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2ef4c70) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fa4dfad94d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fa4eec2cea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fa4ee9558dd in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7fa4ddfec700 (LWP 781)):
+#0  0x00007fa4ee94fbf9 in syscall () from /lib64/libc.so.6
+#1  0x00007fa4dfad92ee in XrdSys::LinuxSemaphore::Wait (this=0x2f04770) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2ef4c88) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2ef4c70) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fa4dfad94d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fa4eec2cea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fa4ee9558dd in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7fa4de7ed700 (LWP 780)):
+#0  0x00007fa4ee94fbf9 in syscall () from /lib64/libc.so.6
+#1  0x00007fa4dfad92ee in XrdSys::LinuxSemaphore::Wait (this=0x2f04770) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2ef4c88) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2ef4c70) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fa4dfad94d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fa4eec2cea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fa4ee9558dd in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fa4defee700 (LWP 779)):
+#0  0x00007fa4eec33e9d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00007fa4dfbedded in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00007fa4dfa7a9a8 in XrdCl::TaskManager::RunTasks (this=0x2f13000) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00007fa4dfa7aaf9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00007fa4eec2cea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fa4ee9558dd in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fa4df7ef700 (LWP 778)):
+#0  0x00007fa4ee955eb3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00007fa4dfbf2c27 in XrdSys::IOEvents::PollE::Begin (this=0x2f00840, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00007fa4dfbef505 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffea0281a20) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00007fa4dfbed5e8 in XrdSysThread_Xeq (myargs=0x2f02040) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00007fa4eec2cea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fa4ee9558dd in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fa4eb76a300 (LWP 753)):
+#0  0x00007fa4ee91c4b9 in waitpid () from /lib64/libc.so.6
+#1  0x00007fa4ee899f62 in do_system () from /lib64/libc.so.6
+#2  0x00007fa4ee89a311 in system () from /lib64/libc.so.6
+#3  0x00007fa4f1c26e9d in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/external/slc7_amd64_gcc700/lib/libCore.so
+#4  0x00007fa4f1c29744 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/external/slc7_amd64_gcc700/lib/libCore.so
+#5  <signal handler called>
+#6  plotResultsnew::loadFiles (this=0x7ffea0284f00, afiles=...) at plotResultsnew.cc:5244
+#7  0x00007fa4ef4ff14e in plotResultsnew::plotResultsnew (this=0x7ffea0284f00, dir=..., files=..., cuts=..., setup=..., year=2017) at plotResultsnew.cc:54
+#8  0x00000000004043d2 in main (argc=15, argv=0x7ffea0289d08) at runPlot.cc:83
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  plotResultsnew::loadFiles (this=0x7ffea0284f00, afiles=...) at plotResultsnew.cc:5244
+#7  0x00007fa4ef4ff14e in plotResultsnew::plotResultsnew (this=0x7ffea0284f00, dir=..., files=..., cuts=..., setup=..., year=2017) at plotResultsnew.cc:54
+#8  0x00000000004043d2 in main (argc=15, argv=0x7ffea0289d08) at runPlot.cc:83
+===========================================================
+
+
+[16.92kB/16.92kB][100%][==================================================][16.92kB/s]  [16.92kB/16.92kB][100%][==================================================][16.92kB/s]  
+[17.02kB/17.02kB][100%][==================================================][17.02kB/s]  [17.02kB/17.02kB][100%][==================================================][17.02kB/s]  
+[19.28kB/19.28kB][100%][==================================================][19.28kB/s]  [19.28kB/19.28kB][100%][==================================================][19.28kB/s]  
+[15.61kB/15.61kB][100%][==================================================][15.61kB/s]  [15.61kB/15.61kB][100%][==================================================][15.61kB/s]  
+[14.57kB/14.57kB][100%][==================================================][14.57kB/s]  [14.57kB/14.57kB][100%][==================================================][14.57kB/s]  
+[14.15kB/14.15kB][100%][==================================================][14.15kB/s]  [14.15kB/14.15kB][100%][==================================================][14.15kB/s]  
+[14.37kB/14.37kB][100%][==================================================][14.37kB/s]  [14.37kB/14.37kB][100%][==================================================][14.37kB/s]  
+[14.37kB/14.37kB][100%][==================================================][14.37kB/s]  [14.37kB/14.37kB][100%][==================================================][14.37kB/s]  
+[28.14kB/28.14kB][100%][==================================================][28.14kB/s]  [28.14kB/28.14kB][100%][==================================================][28.14kB/s]  
+[16.81kB/16.81kB][100%][==================================================][16.81kB/s]  [16.81kB/16.81kB][100%][==================================================][16.81kB/s]  
+[25.99kB/25.99kB][100%][==================================================][25.99kB/s]  [25.99kB/25.99kB][100%][==================================================][25.99kB/s]  
+[26.93kB/26.93kB][100%][==================================================][26.93kB/s]  [26.93kB/26.93kB][100%][==================================================][26.93kB/s]  
+[14.78kB/14.78kB][100%][==================================================][14.78kB/s]  [14.78kB/14.78kB][100%][==================================================][14.78kB/s]  
+[17.42kB/17.42kB][100%][==================================================][17.42kB/s]  [17.42kB/17.42kB][100%][==================================================][17.42kB/s]  
+[48.26kB/48.26kB][100%][==================================================][48.26kB/s]  [48.26kB/48.26kB][100%][==================================================][48.26kB/s]  
+[50.11kB/50.11kB][100%][==================================================][50.11kB/s]  [50.11kB/50.11kB][100%][==================================================][50.11kB/s]  
+[48.25kB/48.25kB][100%][==================================================][48.25kB/s]  [48.25kB/48.25kB][100%][==================================================][48.25kB/s]  
+[58.17kB/58.17kB][100%][==================================================][58.17kB/s]  [58.17kB/58.17kB][100%][==================================================][58.17kB/s]  
+[50.08kB/50.08kB][100%][==================================================][50.08kB/s]  [50.08kB/50.08kB][100%][==================================================][50.08kB/s]  
+[39.46kB/39.46kB][100%][==================================================][39.46kB/s]  [39.46kB/39.46kB][100%][==================================================][39.46kB/s]  
+[23.43kB/23.43kB][100%][==================================================][23.43kB/s]  [23.43kB/23.43kB][100%][==================================================][23.43kB/s]  
+[27.73kB/27.73kB][100%][==================================================][27.73kB/s]  [27.73kB/27.73kB][100%][==================================================][27.73kB/s]  
+[30.79kB/30.79kB][100%][==================================================][30.79kB/s]  [30.79kB/30.79kB][100%][==================================================][30.79kB/s]  
+[23.3kB/23.3kB][100%][==================================================][23.3kB/s]  [23.3kB/23.3kB][100%][==================================================][23.3kB/s]  
+[455B/455B][100%][==================================================][455B/s]  [455B/455B][100%][==================================================][455B/s]  
+[0B/0B][100%][==================================================][0B/s]  
+[16MB/120.7MB][ 13%][======>                                           ][16MB/s]  [120.7MB/120.7MB][100%][==================================================][60.37MB/s]  [120.7MB/120.7MB][100%][==================================================][40.24MB/s]  
+[268.5kB/268.5kB][100%][==================================================][268.5kB/s]  [268.5kB/268.5kB][100%][==================================================][268.5kB/s]  
+[447B/447B][100%][==================================================][447B/s]  [447B/447B][100%][==================================================][447B/s]  
+[72.78kB/72.78kB][100%][==================================================][72.78kB/s]  [72.78kB/72.78kB][100%][==================================================][72.78kB/s]  

@@ -1,0 +1,33 @@
+# -- B+
+type=bupsik,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-Charmonium-BuToJpsiK_2018-nano_v3.root
+type=bupsik,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BuToJpsiK-nano2018_v2.root
+type=bupsik,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BuToJpsiKp-BMuonFilter_nano2018_v2.root
+#----- Bs
+#type=bmm,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-reduced_BToMuMu_Data2018A_nano_v2.root
+type=bmm,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-reduced_BToMuMu_Data2018_nano_v3.root
+type=bdmm,acc,mcComb   bf=(1.06,0.09)e-10 eff=(9.47,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BdToMuMu-nano2018_v2.root
+type=bdmm,mcComb       bf=(1.06,0.09)e-10 eff=(9.47,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BdToMuMu-BMuonFilter-nano2018_v2.root
+type=bsmm,acc,mcComb   bf=(3.65,0.23)e-9  eff=(2.64,0.04)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BsToMuMu-nano2018_v2.root
+type=bsmm,mcComb       bf=(3.65,0.23)e-9  eff=(2.64,0.04)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BsToMuMu-BMuonFilter-nano2018_v2.root
+
+# # -- B+
+# type=bupsik,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-Charmonium-2018A-nano.root
+# type=bupsik,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BuToJpsiKp_Nano2018_v1.root
+# type=bupsik,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BuToJpsiKp_BMuonFilter_Nano2018_v1.root
+# #----- Bs
+# type=bmm,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-Charmonium-2018A-nano.root
+# type=bdmm,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BdToMuMu_Nano2018_v1.root
+# type=bdmm,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BdToMuMu_BMuonFilter_Nano2018_v1.root
+# type=bsmm,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BsToMuMu_Nano2018_v1.root
+# type=bsmm,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-BsToMuMu_BMuonFilter_Nano2018_v1.root
+
+# -- B+
+# type=bupsik,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-Charmonium-2018A-nano.root
+# type=bupsik,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm_Bu2JpsiKp_2018_nano.root
+# type=bupsik,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-mc-BuToJpsiKp_BMuonFilter_nano2018.root
+#----- Bs
+# type=bmm,data        lumi=36.7          file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm-Charmonium-2018A-nano.root
+# type=bdmm,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm_Bd2MuMu_2018_nano.root
+# type=bdmm,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm_Bd2MuMu_Filter_2018_nano.root
+# type=bsmm,acc,mcComb   bf=(6.12,0.19)e-5  eff=(9.43,0.07)e-3 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm_Bs2MuMu_2018_nano.root
+# type=bsmm,mcComb      bf=(6.12,0.19)e-5  eff=(5.65,0.01)e-4 file=/eos/home-c/ckar/Bmm5_code/nanoaodsample/bmm_Bs2MuMu_Filter_2018_nano.root

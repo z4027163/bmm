@@ -48,10 +48,10 @@ class psd {
 
 class fitPsYield {
 public:
-  fitPsYield(std::string hname = "hNo_cnc_bupsikData_chan0", TDirectory *pD = 0, int verbose = 1);
+  fitPsYield(std::string hname = "hNo_cnc_bupsikData_chan0", std::string hname1 = "hNo_cnc_bupsikData_chan0", TDirectory *pD = 0, int verbose = 1);
   fitPsYield(TH2D *h2, int verbose);
   ~fitPsYield();
-  void initFromHist(TH2D *h);
+  void initFromHist(TH2D *h, std::string  hname1 = "hNo_cnc_bupsikData_chan0" );
 
   double getSignalRMS() {return fSummary.fSgSigma; }
   double getSignalPeak() {return fSummary.fSgPeak; }
@@ -67,6 +67,9 @@ public:
 
   double getSignalUnW8Yield() {return fUnW8Combined->fResults.fSg; }
   double getSignalUnW8Error() {return fUnW8Combined->fResults.fSgE;}
+
+  double getSignalW81DYield() {return fW8Combined1D->fResults.fSg; }
+  double getSignalW81DError() {return fW8Combined1D->fResults.fSgE;}
 
   double getSignalUnW8Chi2() {return fUnW8Combined->fChi2; }
   double getSignalUnW8Ndof() {return fUnW8Combined->fNdof; }
@@ -104,9 +107,9 @@ private:
   initFunc    *fpIF;
 
   TH2D        *fH2;
-  TH1D        *fCombined, *fCombinedW8;
+  TH1D        *fCombined, *fCombinedW8, *fCombinedW81D;
   std::vector<psd*> fData;                 // vectors for different prescales with data
-  psd         *fW8Combined, *fUnW8Combined;
+  psd         *fW8Combined, *fUnW8Combined, *fW8Combined1D;
   Results     fSummary;
 
   std::vector<double> fPar, fParE;
